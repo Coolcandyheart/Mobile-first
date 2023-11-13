@@ -1,0 +1,86 @@
+
+/* -- Style reset -- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+/* --- HTML5 display-role reset for older browsers --- */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+body {
+   line-height: 1;
+}
+ol, ul {
+   list-style: none;
+}
+blockquote, q {
+   quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+   content: '';
+   content: none;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+*,
+::after
+::before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/* ---  Slut reset --- */
+t
+/* --- CSS starter nedenunder --- */
+
+body {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 2.8fr; 
+    grid-template-rows: 0.3fr 1.8fr 0.4fr; 
+}
+
+
+/* --- CSS Grid layout for bredere skærme, når browser understøtter grid --- */
+
+@supports (display: grid;) { 
+    @media screen and (min-width: 768px) {
+    .site {
+        display: grid;
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 0.1fr 2.8fr 0.1fr; 
+        grid-template-rows: 0.3fr 1.8fr 0.4fr; 
+        grid-template-areas: 
+        "aside header aside"
+        "aside main aside"
+        "aside footer aside";
+    }
+    }
+}
+    
