@@ -162,15 +162,83 @@ footer {
    line-height: 20px;
 }
 
-
 .behandler_citat {
    font-style: italic;
    padding-top: 7%;
    padding-bottom: 7%;
    font-size: larger;
    text-align: center;
+}
+
+/* --- Kontakt --- */
+
+.kontakt_billede_div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding-top: 5%;
+}
+
+.kontakt_billede {
+   width: 83%;
+   text-align: center;
+}
+
+.kontakt_info {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   line-height: 25px;
 
 }
+
+.kontakt_ikon {
+   height: 15px;
+}
+
+.kontakt_telefonnummer, .kontakt_mail {
+   text-decoration: none;
+   color: black;
+}
+
+
+.kontakt_map {
+   width: 50%;
+   height: 225px;
+   position: relative;
+   padding-top: 7%;
+   padding-bottom: 7%;
+}
+
+.kontakt_map_div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding-top: 7%;
+   padding-bottom: 7%;
+}
+
+.kontakt_overskrift {
+   text-align: center;
+   padding-bottom: 15px;
+   padding-top: 15px;
+}
+
+
+.kontakt em {
+   font-style: italic;
+   color: #818955;
+}
+
+.kontakt_tider {
+   text-align: center;
+   padding-top: 3%;
+   padding-bottom: 2%;
+}
+
 
 /* --- Forventninger til forloeb --- */
 
