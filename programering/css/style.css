@@ -52,7 +52,7 @@ table {
     box-sizing: border-box;
 }
 /* ---  Slut reset --- */
-t
+tt
 /* --- CSS starter nedenunder --- */
 
 body {
@@ -66,10 +66,22 @@ body {
     grid-template-rows: 0.3fr 1.8fr 0.4fr; 
 }
 
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
 
 /* --- CSS Grid layout for bredere skærme, når browser understøtter grid --- */
 
-@supports (display: grid;) { 
+@supports (display: grid){ 
     @media screen and (min-width: 768px) {
     .site {
         display: grid;
@@ -77,9 +89,21 @@ body {
         grid-template-columns: 0.1fr 2.8fr 0.1fr; 
         grid-template-rows: 0.3fr 1.8fr 0.4fr; 
         grid-template-areas: 
-        "aside header aside"
+        "header"
         "aside main aside"
-        "aside footer aside";
+        "footer";
+    }
+    header {
+        grid-area: header;
+    }
+    main {
+        grid-area: main;
+    }
+    aside {
+        grid-area: aside;
+    }
+    footer {
+        grid-area: footer;
     }
     }
 }
