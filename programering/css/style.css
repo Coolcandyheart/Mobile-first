@@ -61,10 +61,11 @@ body {
         "header"
         "main"
         "footer";
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 2.8fr; 
-    grid-template-rows: 0.3fr 1.8fr 0.4fr; 
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    font-family: 'Poppins', sans-serif;
 }
+
 
 header {
     grid-area: header;
@@ -72,12 +73,156 @@ header {
 
 main {
     grid-area: main;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
+body p {
+   font-size: 16px;
+}
+
+main h1 {
+   font-size: 25px;
+   font-weight: bold;
+}
+
+main h2 {
+   font-weight: bolder;
+   font-size: 18px;
+}
+
+main h3 {
+   font-style: italic;
+   font-size: 20px;
+}
+
+/* --- Footer --- */
 footer {
-    grid-area: footer;
+   background-color:#cae1cf;
+   grid-area: footer;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   line-height: 25px;
+   text-align: center;
 }
 
+.footer_overskrift {
+   font-weight: bold;
+}
+
+.footer_telefon_ikon {
+   width: 15px;
+}
+
+.footer_mail {
+   text-decoration: none;
+   color: black;
+}
+
+.footer_telefonnummer {
+   text-decoration: none;
+   color: black;
+}
+
+.footer_some {
+   height: 15px;
+   padding: 10px;
+}
+
+/* --- Behander --- */
+.behandler h1 {
+   text-align: center;
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+
+.behandler h2 {
+   padding-top: 15px;
+   padding-bottom: 7px;
+}
+
+.behandler_billede {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.behandler_billedet {
+   width: 55%;
+}
+
+.behandler_navn {
+   margin-top: 5px;
+}
+
+.behander_artikel {
+   padding-top: 10px;
+   padding-bottom: 8%;
+   line-height: 20px;
+}
+
+
+.behandler_citat {
+   font-style: italic;
+   padding-top: 7%;
+   padding-bottom: 7%;
+   font-size: larger;
+   text-align: center;
+
+}
+
+/* --- Forventninger til forloeb --- */
+
+.mySlides {
+    display:none;
+    margin-bottom: 2em;
+}
+
+/* under ombygning css */
+.uo-content {
+    text-align: center;
+    margin-top: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.uo-titel {
+    font-size: 10vw;
+    margin-bottom: 3%;
+}
+
+.uo-content2{
+    font-size: 4vw;
+    margin-bottom: 2%;
+}
+
+.uo-logo {
+    width: 100%;
+}
+
+/* Øvelser css */
+.oevelse-titel {
+    text-align: center;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.oevelse-nav {
+    font-weight: 700;
+    margin-top: 1.5%;
+}
+
+.oevelse-nav-content{
+    text-decoration: underline;
+    line-height: 2.2;
+}
+
+.oevelse-intro-img{
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom:2%;
+}
 
 /* --- CSS Grid layout for bredere skærme, når browser understøtter grid --- */
 
@@ -85,9 +230,8 @@ footer {
     @media screen and (min-width: 768px) {
     .site {
         display: grid;
-        grid-auto-columns: 1fr; 
-        grid-template-columns: 0.1fr 2.8fr 0.1fr; 
-        grid-template-rows: 0.3fr 1.8fr 0.4fr; 
+        grid-template-rows: 1fr 1fr 1fr;
+    
         grid-template-areas: 
         "header"
         "aside main aside"
@@ -107,4 +251,7 @@ footer {
     }
     }
 }
-    
+   
+/* font-family: 'Poppins', sans-serif; */
+
+
