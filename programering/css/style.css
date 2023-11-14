@@ -270,7 +270,7 @@ footer {
 
 /* Øvelser css */
 .oevelser-layout {
-   display: flexbox;
+   display: flex;
    justify-content: center;
 }
 
