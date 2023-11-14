@@ -55,6 +55,7 @@ table {
 tt
 /* --- CSS starter nedenunder --- */
 
+
 body { 
    display: grid;
    grid-template-columns: 100%;
@@ -62,7 +63,7 @@ body {
         "header"
         "main"
         "footer";
-}
+   }
 
 
 header {
@@ -78,6 +79,7 @@ main {
 body p {
    font-size: 16px;
    font-family: 'Poppins', sans-serif;
+   line-height: 1.5;
 }
 
 main h1 {
@@ -135,7 +137,55 @@ footer {
    padding: 10px;
 }
 
+.footer_some_special {
+   height: 15px;
+}
+
 /* --- Forside --- */
+.forside-heading {
+    text-align: center;
+    padding: 30px 0 20px;
+}
+
+.mobile-header-ikoner {
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+.bestil-tid, .tjek-ind {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ikon-tekst {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+.forside-artikel {
+    width: 100%;
+    padding: 10px 0 30px;
+}
+
+.forside-billede-div1, .forside-billede-div2 {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.forside-billede1, .forside-billede2 {
+    max-width: 100%;
+}
+
+.forside-artikel-overskrift {
+    text-align: center;
+    padding: 15px 0 15px;
+}
+
+
 
 
 /* --- Behander --- */
@@ -248,6 +298,10 @@ footer {
 
 /* --- Forventninger til forloeb --- */
 
+.ikon_1 {
+   display: none;
+}
+
 .mySlides {
     display:none;
     margin-bottom: 2em;
@@ -280,8 +334,8 @@ footer {
    display: flex;
    justify-content: center;
    text-align: center;
-   margin-top: 10px;
-   margin-bottom: 10px;
+   margin-top: 15px;
+   margin-bottom: 15px;
 }
 
 .oevelse-titel {
@@ -307,7 +361,8 @@ footer {
 }
 
 .oevelser-tekst {
-   margin-bottom: 15px;
+   margin-top: 5px;
+   margin-bottom: 20px;
 }
 .oevelser-ywtl{
    font-weight: 700;
@@ -320,7 +375,7 @@ footer {
     @media screen and (min-width: 768px) {
     body {
       display: grid;
-      grid-template-rows: [header-start] 10em [content-start] 100em [footer-start] 30em;
+      grid-template-rows: [header-start] 10em [content-start] 120em [footer-start] 30em;
 		grid-template-columns: [aside] 3em [main] 1fr [nav] 3em;
 		grid-template-areas: 
 		"header header header"
@@ -342,9 +397,165 @@ footer {
     footer {
         grid-area: footer;
     }
+    
+    /* --- Forside --- */
+    
+
+
+
+    
+    /* --- Forventninger til dit forløb */
+    
+    .forvnt_titel {
+      display: flex;
+      justify-content: center;
     }
-}
+
+    .holisme_video {
+      display: flex;
+      flex-direction: row-reverse;
+      margin-right: 5em;
+      margin-left: 5em;
+    }
+
+    .holisme {
+      width: 40em;
+      margin-right: 1em;
+    }
+
+    .ikon_tekst_1 {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .ikon_1 {
+      max-width: 10em;
+      display: block;
+    }
+
+    .besoeg_1 {
+      
+    }
+
+    
+    
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+   /*  --- Kontakt ---  */
+   .kontakt_tekst {
+      text-align: center;
+   }
    
-/* font-family: 'Poppins', sans-serif; */
+   .kontakt_info {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 3%;
+      padding-left: 20%;
+      padding-right: 20%;
+      
+   }
+
+   .kontakt_billede {
+      width: 90%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      object-fit: cover;
+   }
+    
+
+   .kontakt_billede_div {
+      overflow: hidden;
+      height: 19%;
+      margin: 0 auto;
+   }
+
+   .kontakt_overskrift {
+      padding-top: 3%;
+      padding-bottom: 1.5%;
+   }
+
+   .kontakt_tider_wrapper {
+      display: flex;
+      justify-content: space-around;
+  }
+  
+  .kontakt_tider_group {
+      text-align: center;
+  }
+  
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    /* øvelser */
+    /* stræk */
+    .strkeak1 {
+      display: flex;
+      flex-direction: column;
+      margin-right: 15px;
+    }  
+    .strkeak2 {
+      display: flex;
+      flex-direction: column;
+      margin-left: 15px;
+    } 
+
+    .strkeak-tekst {
+      max-width: 390px
+    }
+    
+    .strkeak-oe {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    } 
+    /* y-w-t-l øvelser */
+
+    .y, .w{
+      max-width: 390px;
+      display: flex;
+    }
+
+    .y-og-w {
+      display: flex;
+    }
+
+    
+   
+   } 
+}
+
+   
+
 
 
