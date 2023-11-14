@@ -55,14 +55,13 @@ table {
 tt
 /* --- CSS starter nedenunder --- */
 
-body {
-    display: grid;
+body { 
+   display: grid;
+   grid-template-columns: 100%;
     grid-template-areas: 
         "header"
         "main"
         "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -270,6 +269,11 @@ footer {
 }
 
 /* Øvelser css */
+.oevelser-layout {
+   display: flexbox;
+   justify-content: center;
+}
+
 .oevelse-titel {
     text-align: center;
     margin-bottom: 1%;
@@ -296,15 +300,15 @@ footer {
 
 @supports (display: grid){ 
     @media screen and (min-width: 768px) {
-    .site {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-    
-        grid-template-areas: 
-        "header"
-        "aside main aside"
-        "footer";
-    }
+    body {
+      display: grid;
+      grid-template-rows: [header-start] 10em [content-start] 40em [footer-start] 10em;
+		grid-template-columns: [aside] 3em [main] 1fr [nav] 3em;
+		grid-template-areas: 
+		"header header header"
+		"aside main nav"
+		"footer footer footer";
+		}
     header {
         grid-area: header;
     }
