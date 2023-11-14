@@ -150,6 +150,7 @@ footer {
 
 .footer_some_special {
    height: 15px;
+   margin: 9px;
 }
 
 /* --- Forside --- */
@@ -208,21 +209,33 @@ footer {
 /* --- Om kiropraktik */
 .kiro-artikel {
     width: 100%;
+    padding: 10px 0 0;
 }
 
-.kiro-billede1, .kiro-billede2, .kiro-billede3 {
+.kiro-billede1, .kiro-billede2 {
     width: 100%;
+    padding: 15px 0;
 }
-
+.kiro-billede3 {
+    width: 100%;
+    
+}
 .kiro-boks {
     background-color: #cae1cf;
-    padding: 7% 5%;
+    padding: 15px 6%;
+    margin: 20px 0px ;
 }
 
 .kiro-overskrift {
     text-align: center;
-    padding-bottom: 4%;
+    padding: 15px 0 15px;
 }
+
+
+
+
+
+
 
 
 /* --- Behander --- */
@@ -636,18 +649,41 @@ footer {
    height: 30px;
 }
 
+.footer_special {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+.footer_some_special {
+   height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ---  Under ombygning --- */
 .uo-logo{
-   max-width: 60%;
-   margin-bottom: 50px;
+   max-width: 50%;
+   margin-bottom: 10px;
+   margin-top: 10%;
 }
 
 .uo-content2{
-   max-width: 500px;
+   text-align: center;
+   margin-left: 300px;
+   margin-right: 300px;
 }
-   
-
 
 
 
