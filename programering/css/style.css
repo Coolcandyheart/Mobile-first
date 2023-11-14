@@ -207,6 +207,7 @@ footer {
 
 
 /* --- Om kiropraktik */
+
 .kiro-artikel {
     width: 100%;
     padding: 10px 0 0;
@@ -218,6 +219,7 @@ footer {
 }
 .kiro-billede3 {
     width: 100%;
+    margin-bottom: 3em;
     
 }
 .kiro-boks {
@@ -231,14 +233,8 @@ footer {
     padding: 15px 0 15px;
 }
 
-
-
-
-
-
-
-
 /* --- Behander --- */
+
 .behandler h1 {
    text-align: center;
    padding-top: 15px;
@@ -360,6 +356,10 @@ footer {
 .mySlides {
     display:none;
     margin-bottom: 3em;
+}
+
+.liste_besoeg {
+   margin-left: 3em;
 }
 
 /* under ombygning css */
@@ -516,7 +516,31 @@ footer {
         padding-bottom: 30px;
     }
 
+     /* --- Om kiropraktik --- */
 
+   .kiro-flexbox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .kiro-tekst, .kiro-billede2, .kiro-billede3 {
+      width: 45em;
+      margin-bottom: 1em;
+   }
+
+   .kiro-billede3 {
+      margin-bottom: 3em;
+   }
+
+   .kiro-boks-tekst {
+      width: 37em;
+   }
+
+   .kiro-boks {
+      width: 37em;
+      margin-bottom: 2em;
+   }
 
     
     /* --- Forventninger til dit forløb */
