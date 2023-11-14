@@ -102,6 +102,7 @@ main h3 {
 
 
 /* --- Footer --- */
+
 footer {
    background-color:#cae1cf;
    grid-area: footer;
@@ -199,7 +200,6 @@ footer {
    align-items: center;
    justify-content: center;
    line-height: 25px;
-
 }
 
 .kontakt_ikon {
@@ -213,8 +213,7 @@ footer {
 
 
 .kontakt_map {
-   width: 50%;
-   height: 225px;
+   width: 80%;
    position: relative;
    padding-top: 7%;
    padding-bottom: 7%;
@@ -234,7 +233,6 @@ footer {
    padding-bottom: 15px;
    padding-top: 15px;
 }
-
 
 .kontakt em {
    font-style: italic;
@@ -308,13 +306,21 @@ footer {
     margin-bottom:2%;
 }
 
+.oevelser-tekst {
+   margin-bottom: 15px;
+}
+.oevelser-ywtl{
+   font-weight: 700;
+}
+
+
 /* --- CSS Grid layout for bredere skærme, når browser understøtter grid --- */
 
 @supports (display: grid){ 
     @media screen and (min-width: 768px) {
     body {
       display: grid;
-      grid-template-rows: [header-start] 30em [content-start] 100em [footer-start] 30em;
+      grid-template-rows: [header-start] 10em [content-start] 100em [footer-start] 30em;
 		grid-template-columns: [aside] 3em [main] 1fr [nav] 3em;
 		grid-template-areas: 
 		"header header header"
@@ -324,12 +330,14 @@ footer {
     header {
         grid-area: header;
     }
-    
+    aside {
+      grid-area: aside;
+   }
     main {
         grid-area: main;
     }
-    aside {
-        grid-area: aside;
+    nav {
+      grid-area: nav;
     }
     footer {
         grid-area: footer;
