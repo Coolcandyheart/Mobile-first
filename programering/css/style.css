@@ -365,7 +365,7 @@ footer {
 /* under ombygning css */
 .uo-content {
     text-align: center;
-    margin-top: 20%;
+    margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -376,12 +376,13 @@ footer {
 }
 
 .uo-content2{
-    font-size: 4vw;
+    /* font-size: 4vw; */
     margin-bottom: 2%;
 }
 
 .uo-logo {
     width: 100%;
+    margin-bottom: 20px;
 }
 
 /* Øvelser css */
@@ -675,31 +676,21 @@ footer {
 /* ---  Under ombygning --- */
 .uo-logo{
    max-width: 50%;
-   margin-bottom: 10px;
-   margin-top: 10%;
+   margin-bottom: 70px;
+   margin-top: 2%;
 }
 
 .uo-content2{
    text-align: center;
-   margin-left: 300px;
-   margin-right: 300px;
+   margin-left: 280px;
+   margin-right: 280px;
+}
+
+.uo-content{
+   margin-top: 5%;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 
     /* øvelser */
     /* stræk */
