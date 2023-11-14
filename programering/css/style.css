@@ -516,7 +516,17 @@ footer {
         padding-bottom: 30px;
     }
 
+    /* --- Om kiropraktik --- */
 
+    .kiro-flexbox {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   .kiro-tekst {
+      width: em;
+   }
 
     
     /* --- Forventninger til dit forløb */
