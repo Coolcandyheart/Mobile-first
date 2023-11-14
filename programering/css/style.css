@@ -62,7 +62,6 @@ body {
         "header"
         "main"
         "footer";
-    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -78,22 +77,29 @@ main {
 
 body p {
    font-size: 16px;
+   font-family: 'Poppins', sans-serif;
 }
 
 main h1 {
    font-size: 25px;
    font-weight: bold;
+   font-family: 'Poppins', sans-serif;
 }
 
 main h2 {
    font-weight: bolder;
    font-size: 18px;
+   font-family: 'Poppins', sans-serif;
 }
 
 main h3 {
    font-style: italic;
    font-size: 20px;
+   font-family: 'Poppins', sans-serif;
 }
+
+/* --- Header --- */
+
 
 /* --- Footer --- */
 footer {
@@ -127,6 +133,9 @@ footer {
    height: 15px;
    padding: 10px;
 }
+
+/* --- Forside --- */
+
 
 /* --- Behander --- */
 .behandler h1 {
@@ -272,6 +281,9 @@ footer {
 .oevelser-layout {
    display: flex;
    justify-content: center;
+   text-align: center;
+   margin-top: 10px;
+   margin-bottom: 10px;
 }
 
 .oevelse-titel {
@@ -302,7 +314,7 @@ footer {
     @media screen and (min-width: 768px) {
     body {
       display: grid;
-      grid-template-rows: [header-start] 10em [content-start] 40em [footer-start] 10em;
+      grid-template-rows: [header-start] 30em [content-start] 100em [footer-start] 30em;
 		grid-template-columns: [aside] 3em [main] 1fr [nav] 3em;
 		grid-template-areas: 
 		"header header header"
@@ -312,6 +324,7 @@ footer {
     header {
         grid-area: header;
     }
+    
     main {
         grid-area: main;
     }
