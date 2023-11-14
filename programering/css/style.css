@@ -100,6 +100,13 @@ main h3 {
    font-family: 'Poppins', sans-serif;
 }
 
+main h4 {
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+ }
+
+
 /* --- Header --- */
 
 
@@ -132,6 +139,10 @@ footer {
    color: black;
 }
 
+.footer h6, p, address, a {
+    font-family: 'Poppins', sans-serif;
+}
+
 .footer_some {
    height: 15px;
    padding: 10px;
@@ -156,6 +167,10 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.header-ikon {
+    width: 75px;
 }
 
 .ikon-tekst {
@@ -185,7 +200,29 @@ footer {
     padding: 15px 0 15px;
 }
 
+.some-udvalg {
+    display: none;
+}
 
+
+/* --- Om kiropraktik */
+.kiro-artikel {
+    width: 100%;
+}
+
+.kiro-billede1, .kiro-billede2, .kiro-billede3 {
+    width: 100%;
+}
+
+.kiro-boks {
+    background-color: #cae1cf;
+    padding: 7% 5%;
+}
+
+.kiro-overskrift {
+    text-align: center;
+    padding-bottom: 4%;
+}
 
 
 /* --- Behander --- */
@@ -295,16 +332,21 @@ footer {
    padding-bottom: 2%;
 }
 
+.kontakt_map {
+   padding-top: 2%;
+ 
+}
+
 
 /* --- Forventninger til forloeb --- */
 
-.ikon_1 {
+.tal_ikon {
    display: none;
 }
 
 .mySlides {
     display:none;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }
 
 /* under ombygning css */
@@ -375,7 +417,7 @@ footer {
     @media screen and (min-width: 768px) {
     body {
       display: grid;
-      grid-template-rows: [header-start] 10em [content-start] 120em [footer-start] 30em;
+      grid-template-rows: [header-start] auto [content-start] auto [footer-start] auto;
 		grid-template-columns: [aside] 3em [main] 1fr [nav] 3em;
 		grid-template-areas: 
 		"header header header"
@@ -398,8 +440,67 @@ footer {
         grid-area: footer;
     }
     
-    /* --- Forside --- */
+/* --- Ny styling af skrift */
+    main h1 {
+        font-size: 35px;
+        font-weight: bold;
+     }
+     
+     main h2 {
+        font-weight: bolder;
+        font-size: 26px;
+     }
+     
+     main h3 {
+        font-style: italic;
+        font-size: 24px;
+     }
+
+     main h4 {
+        font-weight: bolder;
+        font-size: 24px;
+     }
+
+     main h5 {
+      font-size: 16px;
+     }
+
+
+/* --- Forside --- */
+    .mobile-header-ikoner {
+        display: none;
+    }
+
+    .forside-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     
+    .forside-heading {
+        font-size: 40px;
+    }
+
+    .forside-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 950px;
+    }
+
+    .forside-child:nth-child(2) {
+        order: 3
+    }
+    
+    .some-udvalg {
+        display: block;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    
+    .some-udvalg-overskrift {
+        padding-bottom: 30px;
+    }
 
 
 
@@ -423,36 +524,28 @@ footer {
       margin-right: 1em;
     }
 
-    .ikon_tekst_1 {
+    .tal_ikon {
+      display: flex;
+      height: 10em;
+      margin-right: 2em;
+      margin-top: 1em;
+    }
+
+    .besoeg {
       display: flex;
       flex-direction: row;
+      justify-content: center;
+      margin-top: 2em;
     }
 
-    .ikon_1 {
-      max-width: 10em;
-      display: block;
+    .tekst_besoeg {
+      width: 40em;
     }
 
-    .besoeg_1 {
-      
+    .liste_besoeg {
+      margin-left: 3em;
     }
 
-    
-    
-
-
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    
-    
    /*  --- Kontakt ---  */
    .kontakt_tekst {
       text-align: center;
@@ -464,7 +557,6 @@ footer {
       padding: 3%;
       padding-left: 20%;
       padding-right: 20%;
-      
    }
 
    .kontakt_billede {
@@ -478,8 +570,9 @@ footer {
 
    .kontakt_billede_div {
       overflow: hidden;
-      height: 19%;
+      height: 20%;
       margin: 0 auto;
+      padding-top: 5%;
    }
 
    .kontakt_overskrift {
@@ -495,9 +588,64 @@ footer {
   .kontakt_tider_group {
       text-align: center;
   }
+
+  .kontakt_map_div {
+   margin-bottom: -50%;
+  }
   
 
+  /* --- Behandler --- */
+  .behandler_container {
+   display: flex;
+   width: 90%;
+   margin-top: 3%;
+   margin-bottom: 3%;
+}
 
+.behandler_billede {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 40rem;
+}
+
+.behandler_content {
+   display: flex;
+   flex-direction: column;
+   width: 80%;
+}
+
+.behandler_citat {
+   text-align: center;
+   margin-top: -10%;
+   margin-bottom: -3%;
+}
+
+.behandler_navn {
+   text-align: left;
+}
+
+/* --- Footer --- */
+footer {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+.footer_some {
+   height: 30px;
+}
+
+
+/* ---  Under ombygning --- */
+.uo-logo{
+   max-width: 60%;
+   margin-bottom: 50px;
+}
+
+.uo-content2{
+   max-width: 500px;
+}
    
 
 
@@ -540,18 +688,97 @@ footer {
       justify-content: space-evenly;
     } 
     /* y-w-t-l øvelser */
-
+    /* y og w delen af øvelsen */
     .y, .w{
-      max-width: 390px;
       display: flex;
-    }
+      align-items: center
+   }
 
+   .y{
+      margin-right: 15px;
+   }
+
+   .w{
+      margin-left: 15px
+   }
+   
+   .y-tekst {
+      margin-left: 15px;
+   }
+
+   .w-tekst {
+      margin-left: 15px
+   }
+   
     .y-og-w {
       display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    /* t og l delen af øvelsen */
+    .t, .l{
+      display: flex;
+      align-items: center
+   }
+
+   .t{
+      margin-right: 15px;
+   }
+
+   .l{
+      margin-left: 15px
+   }
+   
+   .t-tekst {
+      margin-left: 15px;
+   }
+
+   .l-tekst {
+      margin-left: 15px;
+      max-width: 485px;
+   }
+   
+    .t-og-l {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      
     }
 
-    
+    /* øvelse 2 */
+    .oe-2{
+      display: flex;
+      align-items: center;
+    }
    
+    /* øvelse 3 og 4 */
+    .oe-3,.oe-4 {
+      display: flex;
+      flex-direction: column;
+    }
+    .tekst-3og4{
+      max-width: 449px;
+    }
+    
+    .oe-3-og-4{
+      display: flex;
+      justify-content: space-around;
+    }
+
+    /* øvelse 5 */
+    .oe5{
+      display: flex;
+      align-items: center;
+    }
+
+    .oe-titler {
+      margin-top: 30px;
+      margin-bottom: 5px;
+    }
+    /* færdig øvelse */
+    
+    /* kontakt */
+    
    } 
 }
 

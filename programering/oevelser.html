@@ -31,17 +31,24 @@
             </div>
             <div>
                 <P class="oevelse-nav">Gå til:</P>
-                <p class="oevelse-nav-content">Nakkestræk
+                <p class="oevelse-nav-content">
+                <a href="#strkeak1-og-strkeak2">
+                Nakkestræk </a>
                 <br>
-                Styrkeøvelse 1
+               <a href="#oevelse1-ywtl">
+                Styrkeøvelse 1</a>
                 <br>
-                Styrkeøvelse 2
+                <a href="#oevelse2">
+                Styrkeøvelse 2</a>
                 <br>
-                Styrkeøvelse 3
+                <a href="#oevelse3">
+                Styrkeøvelse 3</a>
                 <br>
-                Styrkeøvelse 4
+                <a href="#oevelse4">
+                Styrkeøvelse 4</a>
                 <br>
-                Styrkeøvelse 5</p>
+                <a href="#oevelse5">
+                Styrkeøvelse 5</a></p>
             </div>
         </div>
         <div >
@@ -50,7 +57,7 @@
         <div>
             <div> <!--div for hele Nakkestræk øvelser, stræk 1 og 2-->
                 <div class="oevelser-layout">
-                    <h2>Nakkestræk</h2>
+                    <h2 id="strkeak1-og-strkeak2">Nakkestræk</h2>
                 </div>
             <div class="strkeak-oe">
                 <div class="strkeak1"> <!--div for hele Stræk 1-->
@@ -58,7 +65,7 @@
                         <img src="img/oevelser/nakkestraek-straek-1.jpg" alt="" srcset="">
                     </div>
                     <div class="strkeak-tekst">
-                        <h2>Stræk 1</h2>
+                        <h2 class="oe-titler">Stræk 1</h2>
                         <p class="oevelser-tekst">
                             Tag en vandflaske eller lign. og vikl et håndklæde om flasken.
                             Læg dig på gulvet med flasken under den nederste del af
@@ -81,7 +88,7 @@
                         <img src="img/oevelser/nakkestraek-straek-2.jpg" alt="">
                     </div>
                     <div class="strkeak-tekst">
-                        <h2>Stræk 2</h2>
+                        <h2 class="oe-titler">Stræk 2</h2>
                         <p class="oevelser-tekst">
                             Læg dig med hovedet ud over en bord-, sofa- ellermadraskant,
                             og lad det falde så langt bagover som muligt.
@@ -104,7 +111,8 @@
              <h2>Styrkeøvelse</h2>
              </div>
             <div> <!--div for hele Styrkeøvelse 1 "Y-W-T-L"-->
-                <h2>Øvelse 1:"Y-W-T-L": Her bruges 4 forskellige delstillinger.</h2>
+                <h2 class="oe-titler" id="oevelse1-ywtl">
+                    Øvelse 1:"Y-W-T-L": Her bruges 4 forskellige delstillinger.</h2>
 
                 <p class="oevelser-tekst">Alle delstillinger holdes 3-5 sekunder. Til sidst slippes mave og
                 hage, og armene hænger ned langs kroppen.
@@ -120,7 +128,7 @@
                         <div class="oevelser-layout">
                         <img src="img/oevelser/styrkeoevelse-1-y.jpg" alt="">
                         </div>
-                        <div>
+                        <div class="y-tekst">
                             <div class="oevelser-ywtl">
                             <p>"Y"</p>
                             </div>
@@ -139,7 +147,7 @@
                         <div class="oevelser-layout">
                         <img src="img/oevelser/styrkeoevelse-1-w.jpg" alt="">
                         </div>
-                        <div>
+                        <div class="w-tekst">
                             <div class="oevelser-ywtl">
                             <p>"W"</p>
                             </div>
@@ -153,7 +161,8 @@
                         </div>
                     </div>
                 </div>
-                    <div>
+                <div class="t-og-l">
+                    <div class="t">
                         <div class="oevelser-layout">
                         <img src="img/oevelser/styrkeoevelse-1-t.jpg" alt="">
                         </div>
@@ -161,16 +170,20 @@
                             <div class="oevelser-ywtl">
                                 <p >"T"</p>
                             </div>
+                            <div class="t-tekst">
                             <p class="oevelser-tekst">
                                 3. Armene strækkes ud til siden, så kroppen danner et "T".
                                 <br>
                                 Klem stadigvæk om tennisbold og hold mave og hage inde.
                             </p>
+                            </div>
                         </div>
+                    </div>
+                    <div class="l">
                         <div class="oevelser-layout">
                             <img src="img/oevelser/styrkeoevelse-1-l.jpg" alt="">
                         </div>
-                        <div>
+                        <div class="l-tekst">
                             <div class="oevelser-ywtl">
                             <p class="oevelser-tekst">"L"</p>
                             </div>
@@ -180,89 +193,102 @@
                             </p>
                         </div>
                     </div>
-
-
+                </div>
             </div>
             <div> <!--div for hele Styrkeøvelse 2-->
-                <h2>Øvelse 2</h2>
-                <div class="oevelser-layout">
-                    <img src="img/oevelser/styrkeoevelser-2.png" alt="">
+                <h2 class="oe-titler" id="oevelse2">
+                    Øvelse 2</h2>
+                <div class="oe-2">
+                    <div class="oevelser-layout">
+                        <img src="img/oevelser/styrkeoevelser-2.png" alt="">
+                    </div>
+                    <div>
+                    <p class="oevelser-tekst">
+                        Stå på alle fire og find neutralstillingen uden at spænde i
+                        nakken.
+                        <br>
+                        Sug nu maven ind mod rygsøjlen (så maven er ”flad”) og løft
+                        det ene ben og den modsatte arm, til de er i forlængelse af
+                        kroppen.
+                        <br>
+                        Gå langsomt tilbage til udgangspositionen og gentag med
+                        modsattearm og ben.
+                        <br>
+                        Variation for de øvede:
+                        Øvelsen kan gøres liggende på en stor bold eller med en fuld
+                        vandflaske stående på lænden uden at den falder ned. Disse
+                        udgaver vil give en god udfordring af balanceevnen.
+                    </p>
+                    </div>
                 </div>
-                <p class="oevelser-tekst">
-                    Stå på alle fire og find neutralstillingen uden at spænde i
-                    nakken.
-                    <br>
-                    Sug nu maven ind mod rygsøjlen (så maven er ”flad”) og løft
-                    det ene ben og den modsatte arm, til de er i forlængelse af
-                    kroppen.
-                    <br>
-                    Gå langsomt tilbage til udgangspositionen og gentag med
-                    modsattearm og ben.
-                    <br>
-                    Variation for de øvede:
-                    Øvelsen kan gøres liggende på en stor bold eller med en fuld
-                    vandflaske stående på lænden uden at den falder ned. Disse
-                    udgaver vil give en god udfordring af balanceevnen.
-                </p>
             </div>
-            <div> <!--div for hele Styrkeøvelse 3-->
-                <h2>Øvelse 3</h2>
-                <div class="oevelser-layout">
-                    <img src="img/oevelser/styrkeoevelser-3-billed1.png" alt="">
-               </div>
-                <p class="oevelser-tekst">
-                    Lig fladt på maven med armene ned langs siden og panden i gulvet.
-                </p>
-                <div class="oevelser-layout">
-                <img src="img/oevelser/styrkeoevelser-3-billed2.png" alt="">
+                <div class="oe-3-og-4">
+                    <div class="oe-3"> <!--div for hele Styrkeøvelse 3-->
+                        <h2 id="oevelse3" class="oe-titler">
+                            Øvelse 3</h2>
+                        <div class="oevelser-layout">
+                            <img src="img/oevelser/styrkeoevelser-3-billed1.png" alt="">
+                        </div>
+                        <div class="tekst-3og4">
+                            <p class="oevelser-tekst">
+                                Lig fladt på maven med armene ned langs siden og panden i gulvet.
+                            </p>
+                            <div class="oevelser-layout">
+                            <img src="img/oevelser/styrkeoevelser-3-billed2.png" alt="">
+                            </div>
+                            <p class="oevelser-tekst">
+                                Løft nu hovedet og armene op fra gulvet, så du prøver at
+                                samle skulderbladene på ryggen.                    
+                            </p>
+                            <div class="oevelser-layout">
+                                <img src="img/oevelser/styrkeoevelser-3-billed3.png" alt="">
+                            </div>
+                            <p class="oevelser-tekst">
+                                Løft så til sidst begge strakte ben op fra gulvet.
+                                Hold stillingen 2-3 sekunder og sænk langsomt arme og
+                                ben til udgangspositionen.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="oe-4"> <!--div for hele Styrkeøvelse 3-->
+                        <h2 class="oe-titler" id="oevelse4">
+                            Øvelse 4</h2>
+                        <div class="oevelser-layout">
+                            <img src="img/oevelser/styrkeoevelser-4-billed1.png" alt="">
+                        </div>
+                        <div class="tekst-3og4">
+                            <p class="oevelser-tekst">
+                                Lig med bøjede ben, og fødderne i gulvet.
+                            </p class="oevelser-tekst">
+                            <div class="oevelser-layout">
+                            <img src="img/oevelser/styrkeoevelser-4-billed2.png" alt="">
+                            </div>
+                            <p class="oevelser-tekst">
+                                Løft fødderne op fra gulvet, så lårene står lodret og
+                                underbenene er parallelle med gulvet                    
+                            </p>
+                            <div class="oevelser-layout">
+                            <img src="img/oevelser/styrkeoevelser-4-billed3.png" alt="">
+                            </div>
+                            <p class="oevelser-tekst">
+                                Lav nu en mavebøjning, så hovedet og skulderblade løftes
+                                fra gulvet. Hold stillingen 2-3 sek. Gå langsomt til
+                                udgangspositionen igen.
+                            </p>
+                            <p class="oevelser-tekst">
+                                Husk at spænde op i maven og trække navlen ned mod
+                                rygsøjlen. Hænderne støtter hovedet, undgå at trække i
+                                nakken.
+                                <br>
+                                ØVET: Sænk skiftevis et ben mod gulvet, samtidig med
+                                mave/hoved løftes.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <p class="oevelser-tekst">
-                    Løft nu hovedet og armene op fra gulvet, så du prøver at
-                    samle skulderbladene på ryggen.                    
-                </p>
-                <div class="oevelser-layout">
-                    <img src="img/oevelser/styrkeoevelser-3-billed3.png" alt="">
-                </div>
-                <p class="oevelser-tekst">
-                    Løft så til sidst begge strakte ben op fra gulvet.
-                    Hold stillingen 2-3 sekunder og sænk langsomt arme og
-                    ben til udgangspositionen.
-                </p>
-            </div>
-            <div> <!--div for hele Styrkeøvelse 3-->
-                <h2>Øvelse 4</h2>
-                <div class="oevelser-layout">
-                <img src="img/oevelser/styrkeoevelser-4-billed1.png" alt="">
-                </div>
-                <p class="oevelser-tekst">
-                    Lig med bøjede ben, og fødderne i gulvet.
-                </p class="oevelser-tekst">
-                <div class="oevelser-layout">
-                <img src="img/oevelser/styrkeoevelser-4-billed2.png" alt="">
-                </div>
-                <p class="oevelser-tekst">
-                    Løft fødderne op fra gulvet, så lårene står lodret og
-                    underbenene er parallelle med gulvet                    
-                </p>
-                <div class="oevelser-layout">
-                <img src="img/oevelser/styrkeoevelser-4-billed3.png" alt="">
-                </div>
-                <p class="oevelser-tekst">
-                    Lav nu en mavebøjning, så hovedet og skulderblade løftes
-                    fra gulvet. Hold stillingen 2-3 sek. Gå langsomt til
-                    udgangspositionen igen.
-                </p>
-                <p class="oevelser-tekst">
-                    Husk at spænde op i maven og trække navlen ned mod
-                    rygsøjlen. Hænderne støtter hovedet, undgå at trække i
-                    nakken.
-                    <br>
-                    ØVET: Sænk skiftevis et ben mod gulvet, samtidig med
-                    mave/hoved løftes.
-                </p>
-            </div>
-            <div> <!--div for hele Styrkeøvelse 5-->
-                <h2>Øvelse 5</h2>
+            <h2 id="oevelse5" class="oe-titler"i>
+                Øvelse 5</h2>
+            <div class="oe5"> <!--div for hele Styrkeøvelse 5-->
                 <div class="oevelser-layout">
                 <img src="img/oevelser/styrkeoevelser-5.png" alt="">
                </div>
