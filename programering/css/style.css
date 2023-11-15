@@ -1,18 +1,85 @@
-
 /* -- Style reset -- */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
    margin: 0;
    padding: 0;
    border: 0;
@@ -20,60 +87,80 @@ time, mark, audio, video {
    font: inherit;
    vertical-align: baseline;
 }
+
 /* --- HTML5 display-role reset for older browsers --- */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
    display: block;
 }
+
 body {
    line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
    list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
    content: '';
    content: none;
 }
+
 table {
    border-collapse: collapse;
    border-spacing: 0;
 }
+
 *,
-::after
-::before {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
+::after::before {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   box-sizing: border-box;
 }
+
 /* ---  Slut reset --- */
 tt
 /* --- CSS starter nedenunder --- */
 
 
-body { 
+body {
    display: grid;
    grid-template-columns: 100%;
-    grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-   }
+   grid-template-areas:
+      "header"
+      "main"
+      "footer";
+}
 
 
 header {
-    grid-area: header;
+   grid-area: header;
 }
 
 main {
-    grid-area: main;
-    margin-left: 3%;
-    margin-right: 3%;
+   grid-area: main;
+   margin-left: 3%;
+   margin-right: 3%;
 }
 
 body p {
@@ -101,121 +188,128 @@ main h3 {
 }
 
 main h4 {
-    font-weight: bolder;
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
- }
+   font-weight: bolder;
+   font-size: 18px;
+   font-family: 'Poppins', sans-serif;
+}
+
+main h5 {
+   font-size: 15px;
+   font-family: 'Poppins', sans-serif;
+   line-height: 1.5;
+}
 
 
 /* --- Header --- */
 header {
    font-family: 'Poppins', sans-serif;
- }
+}
 
 .site-header {
    background-color: white;
- }
- 
- .header-flex {
+}
+
+.header-flex {
    display: flex;
    align-items: center;
    justify-content: space-between;
    margin: 0 3vw 0px;
- }
- 
- .site-header .logo .logo-ikon {
+}
+
+.site-header .logo .logo-ikon {
    height: 55px;
    width: auto;
    padding-top: 10px;
- }
- 
- .desktop-header-ikoner {
+}
+
+.desktop-header-ikoner {
    display: none;
- }
- 
- /* --- Navigation --- */
+}
+
+/* --- Navigation --- */
 .navbar-desktop {
    display: none;
 }
 
- .navbar-mobil {
+.navbar-mobil {
    width: 100%;
    background-color: white;
- }
- 
- .menu-mobil {
+}
+
+.menu-mobil {
    display: flex;
    flex-direction: column;
- }
- 
- .menu-mobil li {
-   list-style: none;
- }
+}
 
- .menu-mobil li .menupunkt {
+.menu-mobil li {
+   list-style: none;
+}
+
+.menu-mobil li .menupunkt {
    display: inline-block;
    padding: 0 20px;
    line-height: 30px;
 }
- 
+
 .menu-mobil li .pil {
    font-size: 15px;
    text-align: center;
- }
+}
 
- .menu-mobil li a {
+.menu-mobil li a {
    color: black;
    text-decoration: none;
    line-height: 50px;
    padding: 0 20px;
- }
- 
- .menu-mobil .sub-menu-mobil {
+}
+
+.menu-mobil .sub-menu-mobil {
    width: 100%;
    background-color: white;
    line-height: 35px;
- }
- 
- .menu-mobil .sub-menu-mobil a {
+}
+
+.menu-mobil .sub-menu-mobil a {
    font-size: 14px;
    padding-left: 40px;
- }
+}
 
- /* --- Burger menu */
- .hamburger-ikon input[type="checkbox"] {
+/* --- Burger menu --- */
+.hamburger-ikon input[type="checkbox"] {
    appearance: none;
- }
- 
- .hamburger-ikon .bx-menu {
-   color:black;
-   font-size:2.5rem;
-   cursor:pointer;
- }
+}
 
- .menu-mobil {
-   height:0;
-   overflow:hidden;
+.hamburger-ikon .bx-menu {
+   color: black;
+   font-size: 2.5rem;
+   cursor: pointer;
+}
+
+.menu-mobil {
+   height: 0;
+   overflow: hidden;
    flex-direction: column;
-   transition:all 0.5s ease-in-out;
- }
+   transition: all 0.5s ease-in-out;
+}
 
- .hamburger-ikon {
+.hamburger-ikon {
    display: block;
-   border:none;
-   background-color:transparent;
- }
+   border: none;
+   background-color: transparent;
+}
 
- header:has(.hamburger-ikon input[type="checkbox"]:checked) .menu-mobil {
-   height:auto;
- }
+header:has(.hamburger-ikon input[type="checkbox"]:checked) .menu-mobil {
+   height: auto;
+}
+
 
 /* --- Footer --- */
 
 footer {
-   background-color:#cae1cf;
+   background-color: #cae1cf;
    grid-area: footer;
-   padding-top: 15px;
-   padding-bottom: 15px;
+   padding-top: 30px;
+   padding-bottom: 20px;
    line-height: 25px;
    text-align: center;
 }
@@ -238,8 +332,11 @@ footer {
    color: black;
 }
 
-.footer h6, p, address, a {
-    font-family: 'Poppins', sans-serif;
+.footer h6,
+p,
+address,
+a {
+   font-family: 'Poppins', sans-serif;
 }
 
 .footer_some {
@@ -254,82 +351,88 @@ footer {
 
 /* --- Forside --- */
 .forside-heading {
-    text-align: center;
-    padding: 30px 0 20px;
+   text-align: center;
+   padding: 30px 0 20px;
 }
 
 .mobile-header-ikoner {
-    display: flex;
-    justify-content: space-evenly;
- }
+   display: flex;
+   justify-content: space-evenly;
+}
 
-.bestil-tid, .tjek-ind {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.bestil-tid,
+.tjek-ind {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .header-ikon {
-    width: 75px;
+   width: 75px;
 }
 
 .ikon-tekst {
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    color: black;
-    text-decoration: none;
+   font-size: 16px;
+   font-family: 'Poppins', sans-serif;
+   color: black;
+   text-decoration: none;
 }
 
 .forside-artikel {
-    width: 100%;
-    padding: 10px 0 30px;
+   width: 100%;
+   padding: 10px 0 30px;
 }
 
-.forside-billede-div1, .forside-billede-div2 {
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
+.forside-billede-div1,
+.forside-billede-div2 {
+   margin: 20px 0;
+   display: flex;
+   justify-content: center;
 }
 
-.forside-billede1, .forside-billede2 {
-    max-width: 100%;
+.forside-billede1,
+.forside-billede2 {
+   max-width: 100%;
 }
 
 .forside-artikel-overskrift {
-    text-align: center;
-    padding: 15px 0 15px;
+   text-align: center;
+   padding: 15px 0 15px;
 }
 
 .some-udvalg {
-    display: none;
+   display: none;
 }
 
 
 /* --- Om kiropraktik */
 
 .kiro-artikel {
-    width: 100%;
-    padding: 10px 0 0;
+   width: 100%;
+   padding: 10px 0 0;
 }
 
-.kiro-billede1, .kiro-billede2 {
-    width: 100%;
-    padding: 15px 0;
+.kiro-billede1,
+.kiro-billede2 {
+   width: 100%;
+   padding: 15px 0;
 }
+
 .kiro-billede3 {
-    width: 100%;
-    margin-bottom: 3em;
-    
+   width: 100%;
+   margin-bottom: 3em;
+
 }
+
 .kiro-boks {
-    background-color: #cae1cf;
-    padding: 15px 6%;
-    margin: 20px 0px ;
+   background-color: #cae1cf;
+   padding: 15px 6%;
+   margin: 20px 0px;
 }
 
 .kiro-overskrift {
-    text-align: center;
-    padding: 15px 0 15px;
+   text-align: center;
+   padding: 15px 0 15px;
 }
 
 /* --- Behandler --- */
@@ -401,7 +504,8 @@ footer {
    height: 15px;
 }
 
-.kontakt_telefonnummer, .kontakt_mail {
+.kontakt_telefonnummer,
+.kontakt_mail {
    text-decoration: none;
    color: black;
 }
@@ -442,7 +546,7 @@ footer {
 
 .kontakt_map {
    padding-top: 2%;
- 
+
 }
 
 
@@ -453,35 +557,35 @@ footer {
 }
 
 .mySlides {
-    display:none;
-    margin-bottom: 3em;
+   display: none;
+   margin-bottom: 3em;
 }
 
 .liste_besoeg {
    margin-left: 3em;
 }
 
-/* under ombygning css */
+/* --- Under ombygning --- */
 .uo-content {
-    text-align: center;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
+   text-align: center;
+   margin-top: 5%;
+   margin-left: 5%;
+   margin-right: 5%;
 }
 
 .uo-titel {
-    font-size: 10vw;
-    margin-bottom: 3%;
+   font-size: 10vw;
+   margin-bottom: 3%;
 }
 
-.uo-content2{
-    /* font-size: 4vw; */
-    margin-bottom: 2%;
+.uo-content2 {
+   font-size: 20px;
+   margin-bottom: 2%;
 }
 
 .uo-logo {
-    width: 100%;
-    margin-bottom: 20px;
+   width: 100%;
+   margin-bottom: 20px;
 }
 
 /* Øvelser css */
@@ -494,558 +598,572 @@ footer {
 }
 
 .oevelse-titel {
-    text-align: center;
-    margin-bottom: 1%;
-    margin-top: 1%;
+   text-align: center;
+   margin-bottom: 1%;
+   margin-top: 1%;
 }
 
 .oevelse-nav {
-    font-weight: 700;
-    margin-top: 1.5%;
+   font-weight: 700;
+   margin-top: 1.5%;
 }
 
-.oevelse-nav-content{
-    text-decoration: underline;
-    line-height: 2.2;
+.oevelse-nav-content {
+   text-decoration: underline;
+   line-height: 2.2;
 }
 
-.oevelse-intro-img{
-    width: 100%;
-    margin-top: 2%;
-    margin-bottom:2%;
+.oevelse-intro-img {
+   width: 85%;
+   margin-top: 2%;
+   margin-right: 5em;
+   margin-bottom: 2%;
+   margin-left: 5em;
 }
 
 .oevelser-tekst {
    margin-top: 5px;
+   margin-right: 5em;
    margin-bottom: 20px;
+   margin-left: 5em;
 }
-.oevelser-ywtl{
+
+.oevelser-ywtl {
    font-weight: 700;
 }
 
 
 /* --- CSS Grid layout for bredere skærme, når browser understøtter grid --- */
 
-@supports (display: grid){ 
-    @media screen and (min-width: 768px) {
-    body {
-      display: grid;
-      grid-template-rows: [header-start] auto [content-start] auto [footer-start] auto;
-		grid-template-columns: [aside] 3em [main] 1fr [nav] 3em;
-		grid-template-areas: 
-		"header header header"
-		"aside main nav"
-		"footer footer footer";
-		}
-    header {
-        grid-area: header;
-    }
-    aside {
-      grid-area: aside;
+@supports (display: grid) {
+   @media screen and (min-width: 768px) {
+      body {
+         display: grid;
+         grid-template-rows: [header-start] auto [content-start] auto [footer-start] auto;
+         grid-template-columns: [aside] 3em [main] 1fr [nav] 3em;
+         grid-template-areas:
+            "header header header"
+            "aside main nav"
+            "footer footer footer";
+      }
+
+      header {
+         grid-area: header;
+      }
+
+      aside {
+         grid-area: aside;
+      }
+
+      main {
+         grid-area: main;
+      }
+
+      nav {
+         grid-area: nav;
+      }
+
+      footer {
+         grid-area: footer;
+      }
+
+      /* --- Ny styling af skrift */
+      main h1 {
+         font-size: 35px;
+         font-weight: bold;
+         padding: 20px 0;
+      }
+
+      main h2 {
+         font-weight: bolder;
+         font-size: 26px;
+      }
+
+      main h3 {
+         font-style: italic;
+         font-size: 24px;
+      }
+
+      main h4 {
+         font-weight: bolder;
+         font-size: 24px;
+      }
+
+      main h5 {
+         font-size: 16px;
+      }
+
+      /* --- Header --- */
+      .header-flex {
+         margin: 5px 7vw 15px;
+      }
+
+      .header-flex .hamburger-ikon {
+         display: none;
+      }
+
+      .site-header .logo .logo-ikon {
+         height: 70px;
+         /* width: auto; */
+         padding-top: 0;
+         margin-top: 15px;
+      }
+
+      .desktop-header-ikoner {
+         width: 200px;
+         display: flex;
+         justify-content: space-between;
+         gap: 1rem;
+         padding-top: 20px;
+      }
+
+      .header-ikon {
+         height: 50px;
+         width: auto;
+      }
+
+      .ikon-tekst {
+         text-decoration: none;
+         color: black;
+         font-family: 'Poppins', sans-serif;
+         font-size: 16px;
+      }
+
+      .bestil-tid,
+      .tjek-ind {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+
+      /* Navigation */
+      .navbar-mobil {
+         display: none;
+      }
+
+      .navbar-desktop {
+         display: block;
+         width: 100%;
+         height: 50px;
+         background-color: #cae1cf;
+      }
+
+      .menu-desktop {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+         align-items: center;
+         height: 50px;
+         padding: 0 10%;
+      }
+
+      .menu-desktop li {
+         list-style: none;
+      }
+
+      .menu-desktop .menupunkt {
+         display: inline-block;
+         padding: 0 15px;
+      }
+
+      .menu-desktop li a {
+         color: black;
+         text-decoration: none;
+         line-height: 50px;
+         padding: 0 15px;
+         display: inline-block;
+      }
+
+      .menu-desktop li a:hover {
+         text-decoration: underline;
+      }
+
+      .menu-desktop li .pil {
+         font-size: smaller;
+         text-align: center;
+         transition: all 0.3s ease;
+      }
+
+      .menu-desktop li:hover .pil1,
+      .menu-desktop li:hover .pil2,
+      .menu-desktop li:hover .pil3 {
+         transform: rotate(180deg);
+      }
+
+      .menu-desktop li .sub-menu {
+         position: absolute;
+         background-color: #cae1cf;
+         line-height: 35px;
+         border-radius: 0 0 4px 4px;
+         display: none;
+      }
+
+      .menu-desktop li .sub-menu li a {
+         font-size: 15px;
+      }
+
+      .menu-desktop li:hover .kiro-sub-menu,
+      .menu-desktop li:hover .dit-besoeg-sub-menu,
+      .menu-desktop li:hover .om-os-sub-menu {
+         display: block;
+      }
+
+      /* --- Forside --- */
+      .mobile-header-ikoner {
+         display: none;
+      }
+
+      .forside-container {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+
+      .forside-heading {
+         font-size: 40px;
+         padding-top: 50px;
+      }
+
+      .forside-flex {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         max-width: 950px;
+      }
+
+      .forside-child:nth-child(2) {
+         order: 3
+      }
+
+      .some-udvalg {
+         display: block;
+         text-align: center;
+         padding-bottom: 50px;
+      }
+
+      .some-udvalg-child {
+         display: flex;
+         justify-content: center;
+      }
+
+      .insta_vid {
+         margin: 1em;
+      }
+
+      .some-udvalg-overskrift {
+         padding-bottom: 0px;
+      }
+
+      /* --- Om kiropraktik --- */
+
+      .kiro-flexbox {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+
+      .kiro-tekst,
+      .kiro-billede2,
+      .kiro-billede3 {
+         width: 45em;
+         margin-bottom: 1em;
+      }
+
+      .kiro-billede3 {
+         margin-bottom: 3em;
+      }
+
+      .kiro-boks-tekst {
+         width: 37em;
+      }
+
+      .kiro-boks {
+         width: 37em;
+         margin-bottom: 2em;
+      }
+
+
+/* --- Forventninger til dit forløb */
+
+      .forvnt_titel {
+         display: flex;
+         justify-content: center;
+      }
+
+      .holisme_video {
+         display: flex;
+         flex-direction: row-reverse;
+         margin-right: 5em;
+         margin-left: 5em;
+      }
+
+      .holisme {
+         width: 40em;
+         margin-right: 1em;
+      }
+
+      .tal_ikon {
+         display: flex;
+         height: 10em;
+         margin-right: 2em;
+         margin-top: 1em;
+      }
+
+      .besoeg {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         margin-top: 2em;
+      }
+
+      .tekst_besoeg {
+         width: 40em;
+      }
+
+      .liste_besoeg {
+         margin-left: 3em;
+      }
+
+      /*  --- Kontakt ---  */
+      .kontakt_tekst {
+         text-align: center;
+      }
+
+      .kontakt_billede {
+         width: 90%;
+         height: auto;
+         display: block;
+         margin: 0 auto;
+         object-fit: cover;
+      }
+
+
+      .kontakt_billede_div {
+         overflow: hidden;
+         height: 20%;
+         margin: 0 auto;
+         padding-top: 5%;
+      }
+
+      .kontakt_overskrift {
+         padding-top: 3%;
+         padding-bottom: 1.5%;
+      }
+
+      .kontakt_tider_wrapper {
+         display: flex;
+         justify-content: space-around;
+      }
+
+      .kontakt_tider_group {
+         text-align: center;
+      }
+
+      .kontakt_map_div {
+         margin-bottom: -50%;
+      }
+
+
+      /* --- Behandler --- */
+      .behandler_overskrift {
+         text-align: center;
+      }
+
+      .behandler_container {
+         display: flex;
+         width: 90%;
+         margin-top: 3%;
+         margin-bottom: 3%;
+      }
+
+      .behandler_billede {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 40rem;
+      }
+
+      .behandler_content {
+         display: flex;
+         flex-direction: column;
+         width: 80%;
+      }
+
+      .behandler_citat {
+         text-align: center;
+         margin-top: 1%;
+         margin-bottom: -3%;
+      }
+
+      .behandler_navn {
+         text-align: left;
+      }
+
+      /* --- Footer --- */
+      footer {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+      }
+
+      .footer_some {
+         height: 30px;
+      }
+
+      .footer_special {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+      }
+
+      .footer_some_special {
+         height: 30px;
+      }
+
+
+
+      /* ---  Under ombygning --- */
+      .uo-logo {
+         max-width: 50%;
+         margin-bottom: 70px;
+         margin-top: 2%;
+      }
+
+      .uo-content2 {
+         text-align: center;
+         max-width: 550px;
+         margin: 0 auto;
+      }
+
+      .uo-content {
+         margin-top: 5%;
+      }
+
+
+
+      /* øvelser */
+      /* stræk */
+      .strkeak1 {
+         display: flex;
+         flex-direction: column;
+         margin-right: 15px;
+      }
+
+      .strkeak2 {
+         display: flex;
+         flex-direction: column;
+         margin-left: 15px;
+      }
+
+      .strkeak-tekst {
+         max-width: 390px
+      }
+
+      .strkeak-oe {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+      }
+
+      /* y-w-t-l øvelser */
+      /* y og w delen af øvelsen */
+      .y,
+      .w {
+         display: flex;
+         align-items: center
+      }
+
+      .y {
+         margin-right: 15px;
+      }
+
+      .w {
+         margin-left: 15px
+      }
+
+      .y-tekst {
+         margin-left: 15px;
+      }
+
+      .w-tekst {
+         margin-left: 15px
+      }
+
+      .y-og-w {
+         display: flex;
+         justify-content: space-evenly;
+         align-items: center;
+      }
+
+      /* t og l delen af øvelsen */
+      .t,
+      .l {
+         display: flex;
+         align-items: center
+      }
+
+      .t {
+         margin-right: 15px;
+      }
+
+      .l {
+         margin-left: 15px
+      }
+
+      .t-tekst {
+         margin-left: 15px;
+      }
+
+      .l-tekst {
+         margin-left: 15px;
+         max-width: 485px;
+      }
+
+      .t-og-l {
+         display: flex;
+         justify-content: space-evenly;
+         align-items: center;
+
+      }
+
+      /* øvelse 2 */
+      .oe-2 {
+         display: flex;
+         align-items: center;
+      }
+
+      /* øvelse 3 og 4 */
+      .oe-3,
+      .oe-4 {
+         display: flex;
+         flex-direction: column;
+      }
+
+      .tekst-3og4 {
+         max-width: 449px;
+      }
+
+      .oe-3-og-4 {
+         display: flex;
+         justify-content: space-around;
+      }
+
+      /* øvelse 5 */
+      .oe5 {
+         display: flex;
+         align-items: center;
+      }
+
+      .oe-titler {
+         margin-top: 30px;
+         margin-bottom: 5px;
+      }
+
+      /* færdig øvelse */
+
+      /* kontakt */
+
    }
-    main {
-        grid-area: main;
-    }
-    nav {
-      grid-area: nav;
-    }
-    footer {
-        grid-area: footer;
-    }
-    
-/* --- Ny styling af skrift */
-    main h1 {
-        font-size: 35px;
-        font-weight: bold;
-        padding: 20px 0;
-     }
-     
-     main h2 {
-        font-weight: bolder;
-        font-size: 26px;
-     }
-     
-     main h3 {
-        font-style: italic;
-        font-size: 24px;
-     }
-
-     main h4 {
-        font-weight: bolder;
-        font-size: 24px;
-     }
-
-     main h5 {
-      font-size: 16px;
-     }
-
-/* --- Header --- */
-   .header-flex {
-      margin: 5px 7vw 15px;
-   }
-
-   .header-flex .hamburger-ikon {
-      display: none;
-   }
-
-   .site-header .logo .logo-ikon {
-      height: 70px;
-      /* width: auto; */
-      padding-top: 0;
-      margin-top: 15px;
-   }
-   
-   .desktop-header-ikoner {
-      width: 200px;
-      display: flex;
-      justify-content: space-between;
-      gap: 1rem;
-      padding-top: 20px;
-   }
-   
-   .header-ikon {
-      height: 50px;
-      width: auto;
-   }
-   
-   .ikon-tekst {
-      text-decoration: none;
-      color: black;
-      font-family: 'Poppins', sans-serif;
-      font-size: 16px;
-   }
-   
-   .bestil-tid, .tjek-ind {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-   }
-
-   /* Navigation */
-   .navbar-mobil {
-      display: none;
-   }
-
-   .navbar-desktop {
-      display: block;
-      width: 100%;
-      height: 50px;
-      background-color: #cae1cf;
-   }
-   
-   .menu-desktop {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center;
-      height: 50px;
-      padding: 0 10%;
-   }
-   
-   .menu-desktop li {
-      list-style: none;
-   }
-   
-   .menu-desktop .menupunkt {
-      display: inline-block;
-      padding: 0 15px;
-   }
-
-   .menu-desktop li a {
-      color: black;
-      text-decoration: none;
-      line-height: 50px;
-      padding: 0 15px;
-      display: inline-block;
-   }
-
-   .menu-desktop li a:hover {
-      text-decoration: underline;
-   }
-   
-   .menu-desktop li .pil {
-      font-size: smaller;
-      text-align: center;
-      transition: all 0.3s ease;
-   }
-   
-   .menu-desktop li:hover .pil1,
-   .menu-desktop li:hover .pil2,
-   .menu-desktop li:hover .pil3 {
-      transform: rotate(180deg);
-   }
-   
-   .menu-desktop li .sub-menu {
-      position: absolute;
-      background-color: #cae1cf;
-      line-height: 35px;
-      border-radius: 0 0 4px 4px;
-      display: none;
-   }
-   
-   .menu-desktop li .sub-menu li a {
-      font-size: 15px;
-   }
-   
-   .menu-desktop li:hover .kiro-sub-menu,
-   .menu-desktop li:hover .dit-besoeg-sub-menu, 
-   .menu-desktop li:hover .om-os-sub-menu {
-      display: block;
-   }
-
-/* --- Forside --- */
-    .mobile-header-ikoner {
-        display: none;
-    }
-
-    .forside-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .forside-heading {
-        font-size: 40px;
-        padding-top: 50px;
-    }
-
-    .forside-flex {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 950px;
-    }
-
-    .forside-child:nth-child(2) {
-        order: 3
-    }
-    
-    .some-udvalg {
-        display: block;
-        text-align: center;
-        padding-bottom: 50px;
-    }
-
-    .some-udvalg-child {
-      display: flex;
-      justify-content: center;
-    }
-
-    .insta_vid {
-      margin: 1em;
-    }
-    
-    .some-udvalg-overskrift {
-        padding-bottom: 0px;
-    }
-
-     /* --- Om kiropraktik --- */
-
-   .kiro-flexbox {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-   }
-
-   .kiro-tekst, .kiro-billede2, .kiro-billede3 {
-      width: 45em;
-      margin-bottom: 1em;
-   }
-
-   .kiro-billede3 {
-      margin-bottom: 3em;
-   }
-
-   .kiro-boks-tekst {
-      width: 37em;
-   }
-
-   .kiro-boks {
-      width: 37em;
-      margin-bottom: 2em;
-   }
-
-    
-    /* --- Forventninger til dit forløb */
-    
-    .forvnt_titel {
-      display: flex;
-      justify-content: center;
-    }
-
-    .holisme_video {
-      display: flex;
-      flex-direction: row-reverse;
-      margin-right: 5em;
-      margin-left: 5em;
-    }
-
-    .holisme {
-      width: 40em;
-      margin-right: 1em;
-    }
-
-    .tal_ikon {
-      display: flex;
-      height: 10em;
-      margin-right: 2em;
-      margin-top: 1em;
-    }
-
-    .besoeg {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      margin-top: 2em;
-    }
-
-    .tekst_besoeg {
-      width: 40em;
-    }
-
-    .liste_besoeg {
-      margin-left: 3em;
-    }
-
-   /*  --- Kontakt ---  */
-   .kontakt_tekst {
-      text-align: center;
-   }
-
-   .kontakt_billede {
-      width: 90%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-      object-fit: cover;
-   }
-    
-
-   .kontakt_billede_div {
-      overflow: hidden;
-      height: 20%;
-      margin: 0 auto;
-      padding-top: 5%;
-   }
-
-   .kontakt_overskrift {
-      padding-top: 3%;
-      padding-bottom: 1.5%;
-   }
-
-   .kontakt_tider_wrapper {
-      display: flex;
-      justify-content: space-around;
-  }
-  
-  .kontakt_tider_group {
-      text-align: center;
-  }
-
-  .kontakt_map_div {
-   margin-bottom: -50%;
-  }
-  
-
-  /* --- Behandler --- */
-  .behandler_container {
-   display: flex;
-   width: 90%;
-   margin-top: 3%;
-   margin-bottom: 3%;
-}
-
-.behandler_billede {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   width: 40rem;
-}
-
-.behandler_content {
-   display: flex;
-   flex-direction: column;
-   width: 80%;
-}
-
-.behandler_citat {
-   text-align: center;
-   margin-top: -10%;
-   margin-bottom: -3%;
-}
-
-.behandler_navn {
-   text-align: left;
-}
-
-/* --- Footer --- */
-footer {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-}
-
-.footer_some {
-   height: 30px;
-}
-
-.footer_special {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-}
-
-.footer_some_special {
-   height: 30px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ---  Under ombygning --- */
-.uo-logo{
-   max-width: 50%;
-   margin-bottom: 70px;
-   margin-top: 2%;
-}
-
-.uo-content2{
-   text-align: center;
-   margin-left: 280px;
-   margin-right: 280px;
-}
-
-.uo-content{
-   margin-top: 5%;
-}
-
-
-
-    /* øvelser */
-    /* stræk */
-    .strkeak1 {
-      display: flex;
-      flex-direction: column;
-      margin-right: 15px;
-    }  
-    .strkeak2 {
-      display: flex;
-      flex-direction: column;
-      margin-left: 15px;
-    } 
-
-    .strkeak-tekst {
-      max-width: 390px
-    }
-    
-    .strkeak-oe {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-    } 
-    /* y-w-t-l øvelser */
-    /* y og w delen af øvelsen */
-    .y, .w{
-      display: flex;
-      align-items: center
-   }
-
-   .y{
-      margin-right: 15px;
-   }
-
-   .w{
-      margin-left: 15px
-   }
-   
-   .y-tekst {
-      margin-left: 15px;
-   }
-
-   .w-tekst {
-      margin-left: 15px
-   }
-   
-    .y-og-w {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-    }
-    /* t og l delen af øvelsen */
-    .t, .l{
-      display: flex;
-      align-items: center
-   }
-
-   .t{
-      margin-right: 15px;
-   }
-
-   .l{
-      margin-left: 15px
-   }
-   
-   .t-tekst {
-      margin-left: 15px;
-   }
-
-   .l-tekst {
-      margin-left: 15px;
-      max-width: 485px;
-   }
-   
-    .t-og-l {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      
-    }
-
-    /* øvelse 2 */
-    .oe-2{
-      display: flex;
-      align-items: center;
-    }
-   
-    /* øvelse 3 og 4 */
-    .oe-3,.oe-4 {
-      display: flex;
-      flex-direction: column;
-    }
-    .tekst-3og4{
-      max-width: 449px;
-    }
-    
-    .oe-3-og-4{
-      display: flex;
-      justify-content: space-around;
-    }
-
-    /* øvelse 5 */
-    .oe5{
-      display: flex;
-      align-items: center;
-    }
-
-    .oe-titler {
-      margin-top: 30px;
-      margin-bottom: 5px;
-    }
-    /* færdig øvelse */
-    
-    /* kontakt */
-    
-   } 
 
    @media screen and (min-width: 1400px) {
       .kontakt_info {
@@ -1058,8 +1176,3 @@ footer {
       }
    }
 }
-
-   
-
-
-
