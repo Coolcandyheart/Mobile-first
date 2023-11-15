@@ -21,19 +21,19 @@
             <div class="desktop-header-ikoner">
                 <div class="bestil-tid">
                     <img src="img/kalender-icon.png" alt="Bestil tid" class="header-ikon">
-                    <a href="https://familiekiropraktik.janeapp.com/#staff_member/2"class="ikon-tekst"> Bestil tid</a>
+                    <a href="https://familiekiropraktik.janeapp.com/#staff_member/2" class="ikon-tekst"> Bestil tid</a>
                 </div>
                 <div class="tjek-ind">
                     <img src="img/tjekin-icon.png" alt="Tjek-ind" class="header-ikon">
                     <a href="https://familiekiropraktik.janeapp.com/checkin" class="ikon-tekst">Tjek-ind</a>
                 </div>
             </div>
-            <button class="hamburger-ikon">
+            <div class="hamburger-ikon">
                 <label for="dropdown">
                   <i class='bx bx-menu' ></i>
                 </label>
-                <input type="checkbox" id="dropdown" />
-            </button>
+                <input type="checkbox" id="dropdown">
+            </div>
         </div>
 <!-- Da js næsten er nødvendig i alle responsive 'navbars', har vi valgt at lave to seperate navigationer: en til mobil og en til desktop. Det er ikke best-practice, men det virker... -->
 
@@ -67,7 +67,7 @@
 <!-- Navigation - desktop -->
             <div class="navbar-desktop">
                 <ul class="menu-desktop">
-                    <li><a href="#"> FAQ</a></li>
+                    <li><a href="under-ombygning.html"> FAQ</a></li>
                     <li>
                         <p class="menupunkt">Kiropraktik</p>
                         <i class='bx bxs-down-arrow pil pil1'></i>
@@ -103,35 +103,38 @@
     </header>
 
     <main>
-        <h1 class="behandler_overskrift">Behandler</h1>
-        <div class="behandler_container"> <!-- div rund om behandler tekst + billede -->
-            <div class="behandler_billede">
-                <img src="img/behandler/behandler-stine.jpg" alt="Billede af behandler Stine Bjødstrup Kristensen" class="behandler_billedet">
-                <h5 class="behandler_navn">Stine Bjødstrup Kristensen</h5>
-            </div>
-        
-            <div class="behandler_content">
-                <article class="behander_artikel">
-                    <h2>Hvem er jeg?</h2>
-                    <p>Hej, jeg hedder Stine, og er 4. generations kiropraktor her i praktikken. Efter at være vokset op 
-                        med at se min far komme glad hjem fra klinikken hver
-                        dag, vidste jeg hurtigt, at det var det rette valg for mig
-                        også.</p>
-                </article>
-        
-                <article class="behandler_citat">
-                    <h3>”Vores core-værdier er livsglæde og livskvalitet” </h3>
-                </article>
-        
-                <article class="behandler_artikel">
-                    <p>Mit mål med hver behandling er altid at sørge for, at 
-                        den, der ligger på briksen, føler sig afslappet og i gode 
-                        hænder. Hvis du går herfra med et smil på læben, har
-                        jeg gjort mig job godt.</p>
-                </article>
-            </div>
-        </div> <!-- Slut paa tekst + billede div-->
-        
+        <article>
+            <h1 class="behandler_overskrift">Behandler</h1>
+            <div class="behandler_container"> <!-- div rund om behandler tekst + billede -->
+                <div class="behandler_billede">
+                    <img src="img/behandler/behandler-stine.jpg" alt="Billede af behandler Stine Bjødstrup Kristensen" class="behandler_billedet">
+                    <h5 class="behandler_navn">Stine Bjødstrup Kristensen</h5>
+                </div>
+            
+                <div class="behandler_content">
+                    <div class="behander_artikel">
+                        <h2>Hvem er jeg?</h2>
+                        <p>Hej, jeg hedder Stine, og er 4. generations kiropraktor her i praktikken. Efter at være vokset op 
+                            med at se min far komme glad hjem fra klinikken hver
+                            dag, vidste jeg hurtigt, at det var det rette valg for mig
+                            også. 
+                            Jeg er uddannet i klinisk biomekanik (alment kaldet kiropraktoruddannelsen) på 
+                            Syddansk Universitet i 2011.</p>
+                    </div>
+            
+                    <div class="behandler_citat">
+                        <h3>”Vores core-værdier er livsglæde og livskvalitet” </h3>
+                    </div>
+            
+                    <div class="behandler_artikel">
+                        <p>Mit mål med hver behandling er altid at sørge for, at 
+                            den, der ligger på briksen, føler sig afslappet og i gode 
+                            hænder. Hvis du går herfra med et smil på læben, har
+                            jeg gjort mig job godt.</p>
+                    </div>
+                </div>
+            </div> <!-- Slut paa tekst + billede div-->
+        </article>
         
     </main>
 
@@ -139,21 +142,21 @@
         <section>
             <h6 class="footer_overskrift">Kontakt os</h6>
             <address>
-             <img src="img/pin_ikon_sort.png" alt="Lokation" class="kontakt_ikon">   H. H. Seedorffs Stræde 3-5, 3. sal <br>
+            <img src="img/pin_ikon_sort.png" alt="Lokation" class="kontakt_ikon">   H. H. Seedorffs Stræde 3-5, 3. sal <br>
                 8000 Aarhus <br>
             </address>
             <img src="img/brev_ikon.png" alt="Mail" class="kontakt_ikon">
             <a href="mailto:info@familiekiropraktik.dk" class="footer_mail">info@familiekiropraktik.dk</a> <br>
-                <img src="img/telefon-icon.png" alt="Telefon ikon" class="footer_telefon_ikon"> <a href="tel:+45 86 321 321" class="footer_telefonnummer">+45 86 321 321</a>
-              </p> <br>
+                <img src="img/telefon-icon.png" alt="Telefon ikon" class="footer_telefon_ikon"> <a href="tel:+4586321321" class="footer_telefonnummer">+45 86 321 321</a>
+                <br>
         </section>
     
         <section>
             <h6 class="footer_overskrift">Telefontider</h6>
             <p>Der kan kun ændres tid/meldes afbud telefonisk. <br> 
-                Mandag & Onsdag: 08:00-12:00, samt 15:00-17:00 <br>
+                Mandag & onsdag: 08:00-12:00, samt 15:00-17:00 <br>
                 Tirsdag: 08:00-12:00 <br>
-                Torsdag & Fredag: LUKKET</p>
+                Torsdag & fredag: LUKKET</p>
                 <br>
         </section>
     
