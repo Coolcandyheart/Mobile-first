@@ -275,6 +275,7 @@ header {
 }
 
 /* --- Burger menu --- */
+/* --- Hentet/inspireret af https://dev.to/shubhamtiwari909/responsive-navbar-without-javascript-3p7o --- */
 .hamburger-ikon input[type="checkbox"] {
    appearance: none;
 }
@@ -421,7 +422,6 @@ a {
 .kiro-billede3 {
    width: 100%;
    margin-bottom: 3em;
-
 }
 
 .kiro-boks {
@@ -563,6 +563,7 @@ a {
 
 .liste_besoeg {
    margin-left: 3em;
+   list-style: circle;
 }
 
 /* --- Under ombygning --- */
@@ -603,9 +604,15 @@ a {
    margin-top: 1%;
 }
 
+.oevelse-nav-flex {
+   display: flex;
+   justify-content: center;
+}
+
 .oevelse-nav {
    font-weight: 700;
    margin-top: 1.5%;
+   text-align: center;
 }
 
 .oevelse-nav-content {
@@ -613,25 +620,41 @@ a {
    line-height: 2.2;
 }
 
+a {
+   color: #556a3b;
+}
+
+.space {
+   width: 3em;
+}
+
+.space2 {
+   width: 1em;
+}
+
 .oevelse-intro-img {
-   width: 85%;
+   width: 100%;
    margin-top: 2%;
-   margin-right: 5em;
    margin-bottom: 2%;
-   margin-left: 5em;
+}
+
+.oevelser-tekst1 {
+   margin-top: 5px;
+   margin-bottom: 20px;
 }
 
 .oevelser-tekst {
    margin-top: 5px;
-   margin-right: 5em;
    margin-bottom: 20px;
-   margin-left: 5em;
 }
 
 .oevelser-ywtl {
    font-weight: 700;
 }
 
+.oe5 {
+   margin-bottom: 3em;
+}
 
 /* --- CSS Grid layout for bredere skærme, når browser understøtter grid --- */
 
@@ -856,16 +879,27 @@ a {
 
       /* --- Om kiropraktik --- */
 
+      .kiro-artikel {
+         padding-top: 0%;
+      }
+
       .kiro-flexbox {
          display: flex;
          flex-direction: column;
          align-items: center;
+         width: 750px;
+         margin: 0 auto 2em;
+      }
+
+      .kiro-billede1 {
+         padding-top: 0%;
+         margin-top: 0%;
       }
 
       .kiro-tekst,
       .kiro-billede2,
       .kiro-billede3 {
-         width: 45em;
+         width: 750px;
          margin-bottom: 1em;
       }
 
@@ -873,13 +907,9 @@ a {
          margin-bottom: 3em;
       }
 
-      .kiro-boks-tekst {
-         width: 37em;
-      }
-
-      .kiro-boks {
-         width: 37em;
-         margin-bottom: 2em;
+       .kiro-boks {
+         margin: 0px;
+         padding: 25px 6%;
       }
 
 
@@ -930,7 +960,7 @@ a {
       }
 
       .kontakt_billede {
-         width: 90%;
+         width: 92%;
          height: auto;
          display: block;
          margin: 0 auto;
@@ -940,7 +970,7 @@ a {
 
       .kontakt_billede_div {
          overflow: hidden;
-         height: 20%;
+         height: 30%;
          margin: 0 auto;
          padding-top: 5%;
       }
@@ -1042,6 +1072,19 @@ a {
 
 
       /* øvelser */
+
+      .oevelser-tekst1 {
+         margin-top: 5px;
+         margin-right: 5em;
+         margin-bottom: 20px;
+         margin-left: 5em;
+      }
+
+      .oevelse-intro-img-container {
+         margin-left: 5em;
+         margin-right: 5em;
+      }
+
       /* stræk */
       .strkeak1 {
          display: flex;
@@ -1067,6 +1110,11 @@ a {
 
       /* y-w-t-l øvelser */
       /* y og w delen af øvelsen */
+
+      #oevelse1-ywtl {
+         margin-left: 3em;
+      }
+
       .y,
       .w {
          display: flex;
@@ -1093,13 +1141,17 @@ a {
          display: flex;
          justify-content: space-evenly;
          align-items: center;
+         margin-left: 5em;
+         margin-right: 5em;
       }
 
       /* t og l delen af øvelsen */
       .t,
       .l {
          display: flex;
-         align-items: center
+         align-items: center;
+         margin-left: 5em;
+         margin-right: 5em;
       }
 
       .t {
@@ -1130,6 +1182,8 @@ a {
       .oe-2 {
          display: flex;
          align-items: center;
+         margin-left: 5em;
+         margin-right: 5em;
       }
 
       /* øvelse 3 og 4 */
@@ -1146,17 +1200,36 @@ a {
       .oe-3-og-4 {
          display: flex;
          justify-content: space-around;
+         margin-left: 5em;
+         margin-right: 5em;
       }
 
       /* øvelse 5 */
       .oe5 {
          display: flex;
          align-items: center;
+         margin-bottom: 3em;
+         margin-left: 5em;
+         margin-right: 5em;
       }
 
       .oe-titler {
          margin-top: 30px;
          margin-bottom: 5px;
+      }
+
+      .oe-titler5pc {
+         margin-top: 30px;
+         margin-bottom: 5px;
+         margin-left: 3em;
+      }
+
+      .oevelse3 {
+         text-align: start;
+      }
+
+      .str12 {
+         text-align: center;
       }
 
       /* færdig øvelse */

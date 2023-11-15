@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=ß, initial-scale=1.0">
-    <title>Øvelser</title>
+    <title>Familie Kiropraktik | Øvelser</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Ikon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -19,19 +19,19 @@
             <div class="desktop-header-ikoner">
                 <div class="bestil-tid">
                     <img src="img/kalender-icon.png" alt="Bestil tid" class="header-ikon">
-                    <a href="https://familiekiropraktik.janeapp.com/#staff_member/2"class="ikon-tekst"> Bestil tid</a>
+                    <a href="https://familiekiropraktik.janeapp.com/#staff_member/2" class="ikon-tekst"> Bestil tid</a>
                 </div>
                 <div class="tjek-ind">
                     <img src="img/tjekin-icon.png" alt="Tjek-ind" class="header-ikon">
                     <a href="https://familiekiropraktik.janeapp.com/checkin" class="ikon-tekst">Tjek-ind</a>
                 </div>
             </div>
-            <button class="hamburger-ikon">
+            <div class="hamburger-ikon">
                 <label for="dropdown">
                   <i class='bx bx-menu' ></i>
                 </label>
-                <input type="checkbox" id="dropdown" />
-            </button>
+                <input type="checkbox" id="dropdown">
+            </div>
         </div>
 <!-- Da js næsten er nødvendig i alle responsive 'navbars', har vi valgt at lave to seperate navigationer: en til mobil og en til desktop. Det er ikke best-practice, men det virker... -->
 
@@ -65,7 +65,7 @@
 <!-- Navigation - desktop -->
             <div class="navbar-desktop">
                 <ul class="menu-desktop">
-                    <li><a href="#"> FAQ</a></li>
+                    <li><a href="under-ombygning.html"> FAQ</a></li>
                     <li>
                         <p class="menupunkt">Kiropraktik</p>
                         <i class='bx bxs-down-arrow pil pil1'></i>
@@ -99,12 +99,11 @@
             </div>
         </nav>
     </header>
-
     <main>
             <div> <!-- div for alt intro og nav før alle øvelser-->
             <h1 class="oevelse-titel">Understøttende øvelser</h1>
             <div>
-                <p class="oevelser-tekst">Øvelser der understøtter din behandling og din gode holdning
+                <p class="oevelser-tekst1">Øvelser der understøtter din behandling og din gode holdning
                 Strækøvelserne udføres hver dag, styrkeøvelserne 3-5 gange pr. uge.
                 Strækøvelserne til nakken holdes 5 til 10 minutter ad gangen og udføres
                 morgen og aften. Styrkeøvelserne gentages 10-15 gange (alt efter hvor
@@ -115,28 +114,39 @@
             </div>
             <div>
                 <P class="oevelse-nav">Gå til:</P>
-                <p class="oevelse-nav-content">
-                <a href="#strkeak1-og-strkeak2">
-                Nakkestræk </a>
-                <br>
-               <a href="#oevelse1-ywtl">
-                Styrkeøvelse 1</a>
-                <br>
-                <a href="#oevelse2">
-                Styrkeøvelse 2</a>
-                <br>
-                <a href="#oevelse3">
-                Styrkeøvelse 3</a>
-                <br>
-                <a href="#oevelse4">
-                Styrkeøvelse 4</a>
-                <br>
-                <a href="#oevelse5">
-                Styrkeøvelse 5</a></p>
+            </div>
+            <div class="oevelse-nav-flex">
+                <div>
+                    <p class="oevelse-nav-content">
+                    <a href="#strkeak1-og-strkeak2">
+                    Nakkestræk </a>
+                    <br>
+                    <a href="#oevelse1-ywtl">
+                    Styrkeøvelse 1</a>
+                    <br>
+                    <a href="#oevelse2">
+                    Styrkeøvelse 2</a>
+                    </p>
+                </div>
+                <div class="space">
+                    
+                </div>
+                <div>
+                    <p class="oevelse-nav-content">
+                    <a href="#oevelse3">
+                    Styrkeøvelse 3</a>
+                    <br>
+                    <a href="#oevelse4">
+                    Styrkeøvelse 4</a>
+                    <br>
+                    <a href="#oevelse5">
+                    Styrkeøvelse 5</a>
+                    </p>
+                </div>
             </div>
         </div>
-        <div >
-            <img class="oevelse-intro-img" src="img/oevelser/introbillede.png" alt="">
+        <div class="oevelse-intro-img-container">
+            <img class="oevelse-intro-img" src="img/oevelser/introbillede.png" alt="Al heling tager tid">
         </div>
         <div>
             <div> <!--div for hele Nakkestræk øvelser, stræk 1 og 2-->
@@ -146,10 +156,10 @@
             <div class="strkeak-oe">
                 <div class="strkeak1"> <!--div for hele Stræk 1-->
                     <div class="oevelser-layout">
-                        <img src="img/oevelser/nakkestraek-straek-1.jpg" alt="" srcset="">
+                        <img src="img/oevelser/nakkestraek-straek-1.jpg" alt="Nakkestræk">
                     </div>
                     <div class="strkeak-tekst">
-                        <h2 class="oe-titler">Stræk 1</h2>
+                        <h2 class="oe-titler str12">Stræk 1</h2>
                         <p class="oevelser-tekst">
                             Tag en vandflaske eller lign. og vikl et håndklæde om flasken.
                             Læg dig på gulvet med flasken under den nederste del af
@@ -169,10 +179,10 @@
                 </div>
                 <div class="strkeak2"> <!--div for hele Stræk 2-->
                     <div class="oevelser-layout">
-                        <img src="img/oevelser/nakkestraek-straek-2.jpg" alt="">
+                        <img src="img/oevelser/nakkestraek-straek-2.jpg" alt="Nakkestræk">
                     </div>
                     <div class="strkeak-tekst">
-                        <h2 class="oe-titler">Stræk 2</h2>
+                        <h2 class="oe-titler str12">Stræk 2</h2>
                         <p class="oevelser-tekst">
                             Læg dig med hovedet ud over en bord-, sofa- ellermadraskant,
                             og lad det falde så langt bagover som muligt.
@@ -192,25 +202,25 @@
             </div>
             </div>
              <div class="oevelser-layout">
-             <h2>Styrkeøvelse</h2>
+             <h2>Styrkeøvelser</h2>
              </div>
             <div> <!--div for hele Styrkeøvelse 1 "Y-W-T-L"-->
                 <h2 class="oe-titler" id="oevelse1-ywtl">
                     Øvelse 1:"Y-W-T-L": Her bruges 4 forskellige delstillinger.</h2>
 
-                <p class="oevelser-tekst">Alle delstillinger holdes 3-5 sekunder. Til sidst slippes mave og
+                <p class="oevelser-tekst1">Alle delstillinger holdes 3-5 sekunder. Til sidst slippes mave og
                 hage, og armene hænger ned langs kroppen.
                 Hold en lille pause og ryst eventuelt kroppen, før øvelsen
                 udføres igen.
                 Gentag i alt 3-5 gange.
                 </p>
-                <p class="oevelser-tekst">
+                <p class="oevelser-tekst1">
                 OBS! Husk at trække vejret, mens du laver øvelsen.
                 </p>
                 <div class="y-og-w">
                     <div class="y">
                         <div class="oevelser-layout">
-                        <img src="img/oevelser/styrkeoevelse-1-y.jpg" alt="">
+                        <img src="img/oevelser/styrkeoevelse-1-y.jpg" alt="Øvelse">
                         </div>
                         <div class="y-tekst">
                             <div class="oevelser-ywtl">
@@ -229,7 +239,7 @@
                     </div>
                     <div class="w">
                         <div class="oevelser-layout">
-                        <img src="img/oevelser/styrkeoevelse-1-w.jpg" alt="">
+                        <img src="img/oevelser/styrkeoevelse-1-w.jpg" alt="Øvelse">
                         </div>
                         <div class="w-tekst">
                             <div class="oevelser-ywtl">
@@ -248,7 +258,7 @@
                 <div class="t-og-l">
                     <div class="t">
                         <div class="oevelser-layout">
-                        <img src="img/oevelser/styrkeoevelse-1-t.jpg" alt="">
+                        <img src="img/oevelser/styrkeoevelse-1-t.jpg" alt="Øvelse">
                         </div>
                         <div>
                             <div class="oevelser-ywtl">
@@ -265,7 +275,7 @@
                     </div>
                     <div class="l">
                         <div class="oevelser-layout">
-                            <img src="img/oevelser/styrkeoevelse-1-l.jpg" alt="">
+                            <img src="img/oevelser/styrkeoevelse-1-l.jpg" alt="Øvelse">
                         </div>
                         <div class="l-tekst">
                             <div class="oevelser-ywtl">
@@ -280,28 +290,27 @@
                 </div>
             </div>
             <div> <!--div for hele Styrkeøvelse 2-->
-                <h2 class="oe-titler" id="oevelse2">
+                <h2 class="oe-titler5pc" id="oevelse2">
                     Øvelse 2</h2>
                 <div class="oe-2">
                     <div class="oevelser-layout">
-                        <img src="img/oevelser/styrkeoevelser-2.png" alt="">
+                        <img src="img/oevelser/styrkeoevelser-2.png" alt="Øvelse">
                     </div>
                     <div>
                     <p class="oevelser-tekst">
                         Stå på alle fire og find neutralstillingen uden at spænde i
                         nakken.
-                        <br>
-                        Sug nu maven ind mod rygsøjlen (så maven er ”flad”) og løft
+                        
+                        Sug nu maven ind mod rygsøjlen og løft
                         det ene ben og den modsatte arm, til de er i forlængelse af
                         kroppen.
-                        <br>
+                        
                         Gå langsomt tilbage til udgangspositionen og gentag med
                         modsattearm og ben.
-                        <br>
+                        
                         Variation for de øvede:
                         Øvelsen kan gøres liggende på en stor bold eller med en fuld
-                        vandflaske stående på lænden uden at den falder ned. Disse
-                        udgaver vil give en god udfordring af balanceevnen.
+                        vandflaske stående på lænden uden at den falder ned.
                     </p>
                     </div>
                 </div>
@@ -311,21 +320,21 @@
                         <h2 id="oevelse3" class="oe-titler">
                             Øvelse 3</h2>
                         <div class="oevelser-layout">
-                            <img src="img/oevelser/styrkeoevelser-3-billed1.png" alt="">
+                            <img src="img/oevelser/styrkeoevelser-3-billed1.png" alt="Øvelse">
                         </div>
                         <div class="tekst-3og4">
                             <p class="oevelser-tekst">
                                 Lig fladt på maven med armene ned langs siden og panden i gulvet.
                             </p>
                             <div class="oevelser-layout">
-                            <img src="img/oevelser/styrkeoevelser-3-billed2.png" alt="">
+                                <img src="img/oevelser/styrkeoevelser-3-billed2.png" alt="Øvelse">
                             </div>
                             <p class="oevelser-tekst">
                                 Løft nu hovedet og armene op fra gulvet, så du prøver at
                                 samle skulderbladene på ryggen.                    
                             </p>
                             <div class="oevelser-layout">
-                                <img src="img/oevelser/styrkeoevelser-3-billed3.png" alt="">
+                                <img src="img/oevelser/styrkeoevelser-3-billed3.png" alt="Øvelse">
                             </div>
                             <p class="oevelser-tekst">
                                 Løft så til sidst begge strakte ben op fra gulvet.
@@ -338,21 +347,21 @@
                         <h2 class="oe-titler" id="oevelse4">
                             Øvelse 4</h2>
                         <div class="oevelser-layout">
-                            <img src="img/oevelser/styrkeoevelser-4-billed1.png" alt="">
+                            <img src="img/oevelser/styrkeoevelser-4-billed1.png" alt="Øvelse">
                         </div>
                         <div class="tekst-3og4">
                             <p class="oevelser-tekst">
                                 Lig med bøjede ben, og fødderne i gulvet.
-                            </p class="oevelser-tekst">
+                            </p>
                             <div class="oevelser-layout">
-                            <img src="img/oevelser/styrkeoevelser-4-billed2.png" alt="">
+                            <img src="img/oevelser/styrkeoevelser-4-billed2.png" alt="Øvelse">
                             </div>
                             <p class="oevelser-tekst">
                                 Løft fødderne op fra gulvet, så lårene står lodret og
                                 underbenene er parallelle med gulvet                    
                             </p>
                             <div class="oevelser-layout">
-                            <img src="img/oevelser/styrkeoevelser-4-billed3.png" alt="">
+                            <img src="img/oevelser/styrkeoevelser-4-billed3.png" alt="Øvelse">
                             </div>
                             <p class="oevelser-tekst">
                                 Lav nu en mavebøjning, så hovedet og skulderblade løftes
@@ -370,11 +379,11 @@
                         </div>
                     </div>
                 </div>
-            <h2 id="oevelse5" class="oe-titler"i>
+            <h2 id="oevelse5" class="oe-titler5pc">
                 Øvelse 5</h2>
             <div class="oe5"> <!--div for hele Styrkeøvelse 5-->
                 <div class="oevelser-layout">
-                <img src="img/oevelser/styrkeoevelser-5.png" alt="">
+                <img src="img/oevelser/styrkeoevelser-5.png" alt="Øvelse">
                </div>
                 <p class="oevelser-tekst">
                     Lig på siden med bøjede ben og hovedet støttende på
@@ -399,21 +408,21 @@
         <section>
             <h6 class="footer_overskrift">Kontakt os</h6>
             <address>
-             <img src="img/pin_ikon_sort.png" alt="Lokation" class="kontakt_ikon">   H. H. Seedorffs Stræde 3-5, 3. sal <br>
+            <img src="img/pin_ikon_sort.png" alt="Lokation" class="kontakt_ikon">   H. H. Seedorffs Stræde 3-5, 3. sal <br>
                 8000 Aarhus <br>
             </address>
             <img src="img/brev_ikon.png" alt="Mail" class="kontakt_ikon">
             <a href="mailto:info@familiekiropraktik.dk" class="footer_mail">info@familiekiropraktik.dk</a> <br>
-                <img src="img/telefon-icon.png" alt="Telefon ikon" class="footer_telefon_ikon"> <a href="tel:+45 86 321 321" class="footer_telefonnummer">+45 86 321 321</a>
-              </p> <br>
+                <img src="img/telefon-icon.png" alt="Telefon ikon" class="footer_telefon_ikon"> <a href="tel:+4586321321" class="footer_telefonnummer">+45 86 321 321</a>
+                <br>
         </section>
     
         <section>
             <h6 class="footer_overskrift">Telefontider</h6>
             <p>Der kan kun ændres tid/meldes afbud telefonisk. <br> 
-                Mandag & Onsdag: 08:00-12:00, samt 15:00-17:00 <br>
+                Mandag & onsdag: 08:00-12:00, samt 15:00-17:00 <br>
                 Tirsdag: 08:00-12:00 <br>
-                Torsdag & Fredag: LUKKET</p>
+                Torsdag & fredag: LUKKET</p>
                 <br>
         </section>
     
