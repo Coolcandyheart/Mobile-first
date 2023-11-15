@@ -332,7 +332,7 @@ footer {
     padding: 15px 0 15px;
 }
 
-/* --- Behander --- */
+/* --- Behandler --- */
 
 .behandler h1 {
    text-align: center;
@@ -360,7 +360,7 @@ footer {
    margin-top: 5px;
 }
 
-.behander_artikel {
+.behandler_artikel {
    padding-top: 10px;
    padding-bottom: 8%;
    line-height: 20px;
@@ -557,6 +557,7 @@ footer {
     main h1 {
         font-size: 35px;
         font-weight: bold;
+        padding: 20px 0;
      }
      
      main h2 {
@@ -589,7 +590,7 @@ footer {
 
    .site-header .logo .logo-ikon {
       height: 70px;
-      width: auto;
+      /* width: auto; */
       padding-top: 0;
       margin-top: 15px;
    }
@@ -705,6 +706,7 @@ footer {
     
     .forside-heading {
         font-size: 40px;
+        padding-top: 50px;
     }
 
     .forside-flex {
@@ -734,7 +736,7 @@ footer {
     }
     
     .some-udvalg-overskrift {
-        padding-bottom: 30px;
+        padding-bottom: 0px;
     }
 
      /* --- Om kiropraktik --- */
@@ -808,14 +810,6 @@ footer {
    /*  --- Kontakt ---  */
    .kontakt_tekst {
       text-align: center;
-   }
-   
-   .kontakt_info {
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 3%;
-      padding-left: 20%;
-      padding-right: 20%;
    }
 
    .kontakt_billede {
@@ -1052,6 +1046,17 @@ footer {
     /* kontakt */
     
    } 
+
+   @media screen and (min-width: 1400px) {
+      .kontakt_info {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         padding: 3%;
+         padding-left: 20%;
+         padding-right: 20%;
+      }
+   }
 }
 
    

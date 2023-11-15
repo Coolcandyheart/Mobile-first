@@ -14,11 +14,96 @@
 </head>
 
 
-<body class="behandler">
+<body>
+    <header class="site-header">
+        <div class="header-flex">
+            <a href="index.html" class="logo"><img src="img/logo_familiekiropraktik.png" alt="Familie Kiropraktik logo" class="logo-ikon"></a>
+            <div class="desktop-header-ikoner">
+                <div class="bestil-tid">
+                    <img src="img/kalender-icon.png" alt="Bestil tid" class="header-ikon">
+                    <a href="https://familiekiropraktik.janeapp.com/#staff_member/2"class="ikon-tekst"> Bestil tid</a>
+                </div>
+                <div class="tjek-ind">
+                    <img src="img/tjekin-icon.png" alt="Tjek-ind" class="header-ikon">
+                    <a href="https://familiekiropraktik.janeapp.com/checkin" class="ikon-tekst">Tjek-ind</a>
+                </div>
+            </div>
+            <button class="hamburger-ikon">
+                <label for="dropdown">
+                  <i class='bx bx-menu' ></i>
+                </label>
+                <input type="checkbox" id="dropdown" />
+            </button>
+        </div>
+<!-- Da js næsten er nødvendig i alle responsive 'navbars', har vi valgt at lave to seperate navigationer: en til mobil og en til desktop. Det er ikke best-practice, men det virker... -->
+
+        <nav>
+<!-- Navigation - mobil -->
+            <div class="navbar-mobil">
+                <ul class="menu-mobil">
+                    <li><a href="under-ombygning.html"> FAQ</a></li>
+                    
+                    <li><p class="menupunkt">Kiropraktik</p>
+                        <i class='bx bxs-down-arrow pil pil1'></i></li>
+                    <li class="sub-menu-mobil"><a href="om-kiropraktik.html">Om kiropraktik</a></li>
+                    <li class="sub-menu-mobil"><a href="oevelser.html">Øvelser</a></li>
+                    <li class="sub-menu-mobil"><a href="under-ombygning.html">Klienthistorier</a></li>
+                    
+                    <li><p class="menupunkt">Dit besøg</p>
+                        <i class='bx bxs-down-arrow pil pil2'></i></li>
+                    <li class="sub-menu-mobil"><a href="forventninger-til-dit-forloeb.html">Forventninger til dit forløb</a></li>
+                    <li class="sub-menu-mobil"><a href="under-ombygning.html">Børn og gravide</a> </li>
+                    <li class="sub-menu-mobil"><a href="under-ombygning.html">Spørgeskema</a></li>
+        
+                    <li><p class="menupunkt">Om os</p>
+                        <i class='bx bxs-down-arrow pil pil3'></i></li>
+                    <li class="sub-menu-mobil"><a href="behander.html">Behandler</a></li>
+                    <li class="sub-menu-mobil"><a href="under-ombygning.html">Samarbejdspartnere</a></li>
+                    <li class="sub-menu-mobil"><a href="under-ombygning.html">Paragraffer</a></li>
+                    <li><a href="kontakt.html"> Kontakt</a></li>
+                </ul>
+            </div>
+
+<!-- Navigation - desktop -->
+            <div class="navbar-desktop">
+                <ul class="menu-desktop">
+                    <li><a href="#"> FAQ</a></li>
+                    <li>
+                        <p class="menupunkt">Kiropraktik</p>
+                        <i class='bx bxs-down-arrow pil pil1'></i>
+                        <ul class="kiro-sub-menu sub-menu">
+                            <li><a href="om-kiropraktik.html">Om kiropraktik</a></li>
+                            <li><a href="oevelser.html">Øvelser</a></li>
+                            <li><a href="under-ombygning.html">Klienthistorier</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="menupunkt">Dit besøg</p>
+                        <i class='bx bxs-down-arrow pil pil2'></i>
+ 
+                        <ul class="dit-besoeg-sub-menu sub-menu">
+                            <li><a href="forventninger-til-dit-forloeb.html">Forventninger til dit forløb</a></li>
+                            <li><a href="under-ombygning.html">Børn og gravide</a> </li>
+                            <li><a href="under-ombygning.html">Spørgeskema</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="menupunkt">Om os</p>
+                        <i class='bx bxs-down-arrow pil pil3'></i>
+                        <ul class="om-os-sub-menu sub-menu">
+                            <li><a href="behander.html">Behandler</a></li>
+                            <li><a href="under-ombygning.html">Samarbejdspartnere</a></li>
+                            <li><a href="under-ombygning.html">Paragraffer</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="kontakt.html"> Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <main>
-        <h1>Behandler</h1>
-
+        <h1 class="behandler_overskrift">Behandler</h1>
         <div class="behandler_container"> <!-- div rund om behandler tekst + billede -->
             <div class="behandler_billede">
                 <img src="img/behandler/behandler-stine.jpg" alt="Billede af behandler Stine Bjødstrup Kristensen" class="behandler_billedet">
@@ -38,7 +123,7 @@
                     <h3>”Vores core-værdier er livsglæde og livskvalitet” </h3>
                 </article>
         
-                <article class="behander_artikel">
+                <article class="behandler_artikel">
                     <p>Mit mål med hver behandling er altid at sørge for, at 
                         den, der ligger på briksen, føler sig afslappet og i gode 
                         hænder. Hvis du går herfra med et smil på læben, har
